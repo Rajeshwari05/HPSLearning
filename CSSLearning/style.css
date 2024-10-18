@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#first{
+    background-color: aqua;
+}
+.bgblue{
+    background-color:blanchedalmond;
+}
+nav{
+    padding: 20px;
+    margin: 20px;
+    border: 20px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 455px;
+        }
+        .box{
+            /* border: 2px solid black; */
+            /* transform: translate(20px) rotate(20deg); */
+            /* width: 300px; */
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s; */
+            width: 300px;
+            background-color: aqua;
+            color: black;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: widthanimation; 
+            animation-timing-function: ease-out;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+        }
+        /* .box:hover img{
+            width: 150px;
+        } */
+         @keyframes widthanimation{
+            from{
+                width: 50px;
+
+            }to{
+                width: 100vw;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is box
+            <!-- <img src="/dandelionflower-.jpg" width="500px" alt="flower"> -->
+        </div>
+    </div>
+</body>
+</html>
