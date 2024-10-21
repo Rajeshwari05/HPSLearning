@@ -13,6 +13,7 @@
 
         ul {
             float: right;
+                  
         }
 
         li {
@@ -28,6 +29,15 @@
         ul img {
             margin: -11px -35px -12px -11px;
         }
+        li:hover{
+            background-color: rgba(128, 128, 128, 0.306);
+            background-image: url(arrow.png);
+            background-repeat: no-repeat;
+            background-position: 50% 30px;
+        }
+        li.lists:active{
+            background-color: grey; 
+        }
     </style>
 </head>
 
@@ -37,11 +47,11 @@
             <div>
                 <img src="./logo.png" height="43px" alt="logo">
                 <ul>
-                    <img src="arrow.png" alt="arrow">
-                    <li>Home </li>
-                    <li>Work</li>
-                    <li>Us</li>
-                    <li>Contact</li>
+                    <!-- <img src="arrow.png" alt="arrow"> -->
+                    <li class="lists">Home </li>
+                    <li class="lists">Work</li>
+                    <li class="lists">Us</li>
+                    <li class="lists">Contact</li>
 
                 </ul>
             </div>
