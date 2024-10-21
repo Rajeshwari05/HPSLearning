@@ -1,0 +1,84 @@
+body{
+    font-family: system-ui;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.leftcontainer{
+    background-image: url('10.png');
+    background-color: gray;
+     height: 540px;
+     width: 250px;
+
+}
+
+.rightcontainer{
+    background-image: url('bg_main.png');
+    height: 540px;
+    width: 1000px;
+
+
+}
+.leftlogo{
+    height: 120px;
+    margin: 42px
+}
+
+.leftul{
+    list-style-type: none;
+    /* list-style-type: none; */
+    margin: 40px 0px 40px 28px;
+    color: white;
+    font-weight: lighter;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+li:hover{
+    background-color: black;
+    background-image: url('bg_menu_act.gif');
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+span{
+    color: rgba(255, 166, 0, 0.516);
+}
+footer{
+    font-size: 10px;
+    font-family: monospace;
+    margin: 188px 29px;
+    text-align: center;
+    color: white;
+}
+.rightcontainertext h1{
+    font-size: 75px;
+    font-weight: lighter;
+}
+.rightcontainertext{
+    margin: 138px 70px;
+}
+#p2{
+
+    font-weight: bold;
+    
+    
+}
+
+#p1{
+    font-weight: lighter;
+}
+
+.linescontainer{
+    width: 400px;
+    border-top: 2px solid rgba(255, 230, 0, 0.977);
+    border-bottom: 2px solid rgba(255, 230, 0, 0.977);
+}
+#p3{
+    font-size: xx-small;
+}
+h1{
+    margin: -25px 0px;
+}
