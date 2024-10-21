@@ -43,6 +43,10 @@ li:hover{
     background-repeat: no-repeat;
     background-position: 100%;
 }
+li.menu:active{
+    background-color: grey;
+}
+
 span{
     color: rgba(255, 166, 0, 0.516);
 }
