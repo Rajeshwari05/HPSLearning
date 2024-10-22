@@ -8,35 +8,34 @@
     <style>
         header {
             background-color: black;
-            height: 43px;
+            height: 50px;
         }
 
         ul {
             float: right;
-                  
+            margin-top: 26px;
+            font-size: small;
+
         }
 
         li {
             display: inline;
             color: white;
             padding: 10px;
+            font-weight: bold;
+
         }
 
         img {
-            margin-left: 15px;
+            margin: 4px 15px;
         }
 
-        ul img {
-            margin: -11px -35px -12px -11px;
+        li:hover {
+            background: rgba(128, 128, 128, 0.306) url(arrow.png) no-repeat 50% 28px;
         }
-        li:hover{
-            background-color: rgba(128, 128, 128, 0.306);
-            background-image: url(arrow.png);
-            background-repeat: no-repeat;
-            background-position: 50% 30px;
-        }
-        li.lists:active{
-            background-color: grey; 
+
+        li.lists:active {
+            background-color: grey;
         }
     </style>
 </head>
@@ -47,7 +46,7 @@
             <div>
                 <img src="./logo.png" height="43px" alt="logo">
                 <ul>
-                    
+
                     <li class="lists">Home </li>
                     <li class="lists">Work</li>
                     <li class="lists">Us</li>
