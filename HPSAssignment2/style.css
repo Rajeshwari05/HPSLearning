@@ -1,25 +1,37 @@
-body{
-    font-family: system-ui;
+html, body{
+    font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+}
+div{
+    display: block;
+
 }
 
 .container{
     display: flex;
     justify-content: center;
+    height: 100%;
+    width: 100%;
    
 }
 
 .leftcontainer{
     background-image: url('10.png');
     background-color: gray;
-     height: 540px;
+     height: 100%;
      width: 250px;
 
 }
 
 .rightcontainer{
     background-image: url('bg_main.png');
-    height: 540px;
-    width: 1000px;
+    height: 100%;
+    width: calc(100% - 250px);
 
 
 }
@@ -34,48 +46,66 @@ body{
     color: white;
     font-weight: lighter;
     background-size: cover;
-    transition: background-image 0.5s ease-in-out;
-}
-li:hover{
-    background-color: black;
-    background-image: url('bg_menu_act.gif');
-    background-repeat: no-repeat;
-    background-position: 100%;
-}
-li.menu:active{
-    background-color: grey;
+    
 }
 
+li a:hover{
+    background-color: black; 
+}
+
+li:hover{
+    /* background-repeat: no-repeat;
+    background-image: url('bg_menu_act.gif');
+    background-position: 100%; */
+    background: url('bg_menu_act.gif') no-repeat 100%;
+    background-position-y: center;
+    transform: translateY(1px)
+    /* cursor: pointer; */
+    
+}
+.menu:active{
+    background-color: transparent;
+
+}
+li a:active{
+    background-color:grey;
+}
 span{
     color: rgba(255, 166, 0, 0.516);
 }
 footer{
     font-size: 10px;
-    font-family: monospace;
-    margin: 188px 29px;
+    font-family:'Bebas Neue';
+    font-weight: 400;
+    margin: 1% 48px;
     text-align: center;
     color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
 }
 .rightcontainertext h1{
     font-size: 75px;
-    font-weight: lighter;
+    /* font-weight: lighter; */
 }
 .rightcontainertext{
     margin: 138px 70px;
 }
 #p2{
 
+    font-size: x-large;
     font-weight: bold;
     
     
 }
 
 #p1{
-    font-weight: lighter;
+    font-weight: 300;
+    font-size: larger
 }
 
 .linescontainer{
-    width: 400px;
+    width: 63%;
     border-top: 2px solid rgba(255, 230, 0, 0.977);
     border-bottom: 2px solid rgba(255, 230, 0, 0.977);
 }
@@ -84,4 +114,5 @@ footer{
 }
 h1{
     margin: -25px 0px;
+    font-weight: 400;
 }
