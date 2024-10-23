@@ -58,9 +58,6 @@ li:hover{
     background-image: url('bg_menu_act.gif');
     background-position: 100%; */
     background: url('bg_menu_act.gif') no-repeat 100%;
-    background-position-y: center;
-    transform: translateY(1px)
-    /* cursor: pointer; */
     
 }
 .menu:active{
@@ -93,15 +90,17 @@ footer{
 }
 #p2{
 
-    font-size: x-large;
+    font-size: 30px;
     font-weight: bold;
-    
+    margin: 10px;
+    font-family: 'sans-serif';
     
 }
 
 #p1{
     font-weight: 300;
-    font-size: larger
+    font-size: 32px;
+    font-family: 'Dosis';
 }
 
 .linescontainer{
@@ -110,9 +109,18 @@ footer{
     border-bottom: 2px solid rgba(255, 230, 0, 0.977);
 }
 #p3{
-    font-size: xx-small;
+    font-size: 12px;
 }
 h1{
     margin: -25px 0px;
-    font-weight: 400;
+    font-family: 'Dosis';
+    font-weight: 400
+}
+.menu a{
+    padding: 2px 5px;
+    border-radius: 5px;
+
+}
+.pLineContainer{
+    width: 100%;
 }
