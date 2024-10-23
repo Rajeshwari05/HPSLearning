@@ -1,0 +1,151 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "OpenSansRegular", sans-serif;
+  }
+  .container1 nav{
+    /* background-color: #808080; */
+    background-image: url(images/hdr-navi.jpg);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .img1{
+    padding: 15px;
+    margin-top: 7px;
+      
+  }
+  .img2{
+     margin: 400px;
+  }
+  .img3{
+    padding: 30px;
+    margin-top: 7px;
+  }
+  .container2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .container2up{
+    font-size: px;
+    font-weight: lighter;
+    margin: 0px 0px 0px 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px 50px;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+.first-grid-item{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: small;
+}
+.last-grid-item{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#item1leftspan{
+    font-size: 10px;
+    font-weight: bold;
+}
+#item2rightspan{
+    color: grey;
+    font-size: 12px;
+}
+.IDnum{
+    font-size: 10px;
+    font-weight: bold;
+}
+.somejob123{
+    font-size: 20px;
+}
+.container3{
+    display: flex;
+    background-color: grey;
+    height: 30px;
+}
+.taskheader{
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 30px;
+   width: 90%;
+   margin: 0px;
+   display: flex;
+    
+}
+.newtaskheader{
+  background-image: url(./images/tab-active.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: right;
+    height: 22px;
+    width: 100px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.taskitemcontainer{
+}
+
+.thumb{
+  border: 1px solid #ccc;
+} 
+.taskContainer{
+  display: flex;
+  padding: 10px;
+}
+.headingParagraphContainer{
+  padding : 10px 25px;
+  margin-right: 700px;
+}
+.heading{
+  font-weight: bold;
+  font-size: 18px;
+  color: grey;
+}
+.attachment{
+  background-image: url(./images/attachment.png);
+  background-repeat: no-repeat;
+  border:2px solid #ccc;
+  width: 45px;
+  /* height: 25px; */
+}
+.two{
+  margin-top: 20px;
+}
+
+.attachments-count-container{
+  border: 1px solid #ccc;
+  width: 50px;
+  text-align: center;
+  margin: -10px 0px 0px 0px ;
+}
+
+.hazard-type-container{
+  display: grid;
+  width: 70px;
+  height: 70px;
+  float: right;
+  
+}
