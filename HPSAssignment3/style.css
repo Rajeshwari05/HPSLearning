@@ -3,16 +3,18 @@ html, body{
     width: 100%;
     box-sizing: border-box;
     margin: 0;
-    font-family: "OpenSansRegular", sans-serif;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .container1 nav{
     /* background-color: #808080; */
     background-image: url(images/hdr-navi.jpg);
-    height: 50px;
+    height: 60px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-size: contain;
     /* justify-content: center; */
   }
   .img1{
@@ -21,11 +23,13 @@ html, body{
       
   }
   .img2{
-     margin: 400px;
+    padding: 160px;
+     margin-left: 425px;
   }
   .img3{
-    padding: 30px;
+    padding: 15px;
     margin-top: 7px;
+    margin-left: 420px;
   }
   .container2{
   display: flex;
@@ -61,34 +65,45 @@ html, body{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-#item1leftspan{
+.item1leftspan{
     font-size: 10px;
     font-weight: bold;
 }
+.Rastatus{
+  font-size: 10px;
+}
 #item2rightspan{
-    color: grey;
-    font-size: 12px;
+    font-weight: lighter;
+    font-size: 18px;
 }
 .IDnum{
     font-size: 10px;
     font-weight: bold;
 }
 .somejob123{
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 400;
 }
 .container3{
+    display: flex;/* past*/
+    /* background-color: grey; */
+    background-image: url(./images/main-hdr-bg.jpg);
+    height: 45px; /*past */
+    width: 100%;
     display: flex;
-    background-color: grey;
-    height: 30px;
+    flex-direction: row;
+    align-items: center;
+    background-size: contain;
 }
 .taskheader{
    justify-content: center;
    align-items: center;
    text-align: center;
-   height: 30px;
+   height: 45px;
    width: 90%;
    margin: 0px;
    display: flex;
+   font-size: x-large;
     
 }
 .newtaskheader{
@@ -97,38 +112,43 @@ html, body{
     background-position: center;
     background-size: cover;
     float: right;
-    height: 22px;
-    width: 100px;
+    height: 30px;
+    width: 115px;
     display: flex;
     margin: auto;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
-.taskitemcontainer{
-}
+
+/* task line 1 */
+
+
 
 .thumb{
   border: 1px solid #ccc;
+  margin: 10px 15px;
+  /* padding: 2px; */
 } 
 .taskContainer{
+  border-bottom: 1px solid grey; /* Border line for all task containers*/
   display: flex;
-  padding: 10px;
+  padding: 0px;
+  margin-bottom: -2px;
 }
 .headingParagraphContainer{
   padding : 10px 25px;
   margin-right: 700px;
 }
 .heading{
-  font-weight: bold;
+  font-weight: 500;
   font-size: 18px;
-  color: grey;
 }
 .attachment{
   background-image: url(./images/attachment.png);
   background-repeat: no-repeat;
   border:2px solid #ccc;
-  width: 45px;
+  width: 40px;
   /* height: 25px; */
 }
 .two{
@@ -137,15 +157,140 @@ html, body{
 
 .attachments-count-container{
   border: 1px solid #ccc;
-  width: 50px;
+  width: 60px;
   text-align: center;
-  margin: -10px 0px 0px 0px ;
+  margin: -15px 0px 0px 0px ;
 }
 
-.hazard-type-container{
+.hazard-container{
   display: grid;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 70px; 
+  margin-left: 300px;
+  margin-top: 15px;
+}
+.severity-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 18px;
+  width: 180px;
+}
+.hazard-item{
+  font-size: x-small;
+  font-weight: bold;
+}
+.severity{
+  font-size: x-small;
+  font-weight: bold;
+
+}
+.severity-container-item{
+  background-image: url(./images/green-color.jpg);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.twentifive{
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.severity-container-item2{
+  background-image: url(./images/orange-color.jpg);
+
+}
+.fourteen{
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.severity-container-item3{
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.arrow{
+  margin: auto;
+  margin-right: 10px;
+}
+
+
+
+/* Line 1 task ended */
+/* Line 2 task started */
+
+
+.severity-container-item3-task2, .severity-container-item3-task5{
+  background-image: url(./images/red-color.jpg);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+/* Line 2 task ended */
+
+/* Line 3 task started */
+/* Copy paste and only image was added*/
+/* Line 3 task ended */
+
+/* Line 4 task started */
+/* Copy paste and removed some items*/
+/* Line 4 task ended */
+
+/* Line 5 task started */
+.majorclass{
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-row-gap: 2px;
+}
+.majorclass  >div:nth-child(even) {
+  background: #ddd;
+
+}
+
+/* footer*/
+
+/* .submit{
+  background-image: url(./images/dark-blue-lft.png);
+  height: 30px;
+  width: 200px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+} */
+.footer-container{
+  display: flex
+}
+
+.footer-container-image-left{
+  margin-top: 4px; /*remember--------------------------------*/
+  height: 15px;
+}
+
+.submit-button{
   float: right;
+  background-image: url('./images/footr-link-rght.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  height: 45px;
+  width: 16%;
+  margin:20px 0px 0px 1200px;
+  border-radius: 8px;
+}
+.submit-approval{
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 40px;
+  font-weight: bold;
   
 }
