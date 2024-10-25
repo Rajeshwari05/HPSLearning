@@ -115,6 +115,21 @@ html, body{
     align-items: center;
     text-align: center;
     justify-content: center;
+
+}
+.new-task-color{
+  color: white;
+}
+.container3 .newtaskheader span:active{         /*This is active button for + New Task*/
+  background-color: rgba(0, 183, 255, 0.747);
+  background-size: contain;
+  display: flex;
+  height: 30px;
+  width: 115px;
+  align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
 }
 .thumb{
   border: 1px solid #ccc;
@@ -162,6 +177,7 @@ html, body{
   border-radius: 10px;
   height: 18px;
   width: 180px;
+  grid-column-gap: 1px;
 }
 .hazard-item{
   font-size: x-small;
@@ -243,6 +259,11 @@ html, body{
   width: 16%;
   margin:20px 0px 0px 1200px;
   border-radius: 8px;
+}
+div .submit-button span:active{         /*This is active button for Submit Risk Assesment for Approval*/
+  background-color: rgba(0, 183, 255, 0.747);
+  border-radius: 8px;
+
 }
 .submit-approval{
   color: white;
