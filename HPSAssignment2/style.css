@@ -36,13 +36,14 @@ div{
 
 }
 .leftlogo{
-    height: 120px;
-    margin: 42px
+    height: 175px;
+    margin: 15px;
+    margin-top: 60px;
 }
 
 .leftul{
     list-style-type: none;
-    margin: 40px 0px 40px 28px;
+    margin: 65px 0px 40px 28px;
     color: white;
     font-weight: lighter;
     background-size: cover;
@@ -51,6 +52,7 @@ div{
 
 li a:hover{
     background-color: black; 
+    cursor: pointer;
 }
 
 li:hover{
