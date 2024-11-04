@@ -65,6 +65,10 @@ tr {
 .fontweight {
     font-weight: bold;
 }
+.someJobsId{
+    font-weight: bold;
+    color: grey;
+}
 
 .fontsizeBig {
     font-size: large;
