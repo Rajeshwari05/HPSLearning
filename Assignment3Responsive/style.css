@@ -119,8 +119,12 @@ tr {
     background-position-y: center;
 }
 
-.backGroundTasks .newTaskButtonactive:active {
+ .newTaskButtonactive:active {
     background-image: url(./images/tab-active.png);
+}
+.submitApproval:active{
+    background-image: url(./images/tab-active.png);
+
 }
 
 .taskContainerItem {
