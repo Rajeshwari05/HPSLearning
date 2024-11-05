@@ -8,6 +8,11 @@ html, body{
 }
 .mainContainer {
     flex-direction: column;
+    flex-direction: column;
+    margin:0 15% 0 15%;
+    border-right:1px solid #c3c1c1;
+    border-left:1px solid #c3c1c1;
+    background:#f0f0f0;
     
 }
 .headerBackgroundImage{
@@ -148,15 +153,6 @@ hr{
     background:linear-gradient(45deg, rgb(68, 67, 67), black);
     width:30%;
 }  
-
-.mainContainer{
-    flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
-    margin:0 15% 0 15%;
-    border-right:1px solid #c3c1c1;
-    border-left:1px solid #c3c1c1;
-    background:#f0f0f0;
-}
 .displayType{
     display:flex;
 }
