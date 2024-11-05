@@ -433,7 +433,7 @@ hr{
 .startTask{
     flex-direction: row;
     justify-content: space-between;
-    margin:0 3% 0 3%;
+    margin: 11px 3% 15px 3%;
 }
 .taskText{
     font-weight: 500;
