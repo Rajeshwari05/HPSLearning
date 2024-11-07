@@ -1,6 +1,3 @@
-// function onClickFunction(){ 
-//     console.log('clicked on equal operator');
-// }
 let string = " ";
 let buttons = document.querySelectorAll('.button');
 Array.from(buttons).forEach((button)=>{
