@@ -4,7 +4,6 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-    /* font-family: 'Open Sans', sans-serif; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -27,7 +26,7 @@ body {
     display: flex;
 }
 
-.dashboardButton {
+.dashBoardButton {
     padding: 0.5% 0% 0.5% 1%;
 }
 
@@ -57,11 +56,11 @@ tr {
 
 }
 
-.fontsizeSmall {
+.fontSizeSmall {
     font-size: small;
 }
 
-.fontweight {
+.fontWeight {
     font-weight: bold;
 }
 .someJobsId{
@@ -69,7 +68,7 @@ tr {
     color: grey;
 }
 
-.fontsizeBig {
+.fontSizeBig {
     font-size: large;
     font-weight: lighter;
     color: gray;
@@ -108,7 +107,7 @@ tr {
     font-weight: 500;
 }
 
-.newTaskButtonactive {
+.newTaskButtonActive {
     background-image: url(./images/dark-blue-rght.png);
     background-repeat: no-repeat;
     color: white;
@@ -122,7 +121,7 @@ tr {
     background-position-y: center;
 }
 
- .newTaskButtonactive:active {
+ .newTaskButtonActive:active {
     background-image: url(./images/tab-active.png);
 }
 .submitApproval:active{
@@ -138,6 +137,10 @@ tr {
 
 .taskContainerItemImage {
     border: 1px solid #ccc;
+}
+.imageHeightWidth{
+    width: 126px;
+    height: 126px;
 }
 
 .spanParagraph {
@@ -231,7 +234,7 @@ tr {
     border-bottom-right-radius: 10px;
 }
 
-.redBackgroundcolorcut {
+.redBackgroundColorCut {
     background-image: url(./images/red-color.jpg);
     margin-right: 15%;
 }

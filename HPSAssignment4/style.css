@@ -13,11 +13,10 @@ html, body{
     /* border-left:1px solid #c3c1c1; */
     
 }
-.menumainContainer{
+.menuMainContainer{
     width: calc(100% - 30%);
     flex-direction: column;
     margin-left: 15%;
-    /* border:1px solid #c3c1c1; */
 
 }
 .headerBackgroundImage{
@@ -108,9 +107,8 @@ background-repeat: no-repeat;
 }
 .mainWidthContainer    {
     width: calc(100% - 30%);
-    /* flex-direction: column; */
     margin: auto;
-    border: 1px solid rgb(194, 188, 188);
+    border: 1px solid #ddd;
     border-top: hidden;
     border-bottom: hidden;
 }
@@ -124,7 +122,7 @@ background-repeat: no-repeat;
     font-weight: bold;
 }
 .lastUpdated{
-    font-weight: bold;
+    font-weight: 500;
 }
 .tdLaserScribingData{
     border: 1px solid gray;
@@ -132,7 +130,6 @@ background-repeat: no-repeat;
 .laserScribingDataTable{
     border-collapse: collapse;
     width: 100%;
-    color: gray;
 
 }
 .tdPadding{
@@ -143,8 +140,8 @@ background-repeat: no-repeat;
     border-top-right-radius: 5%;
 }
 .paddingForTable{
-    padding: 0% 2%;
-    padding-bottom: 1%;
+    padding: 1%;
+    padding-top: 0%;
 }
 .leftRightContainer{
     background-color: grey;
@@ -338,10 +335,9 @@ hr{
 
 .taskBody{
     flex-direction: row;
-    border-top:1px solid rgb(194, 188, 188) ;
     background:white; 
 }
-.taskbody1{
+.taskBody1{
     background: grey;
     width:30%;
 }  
@@ -362,7 +358,7 @@ hr{
     padding:0;
     margin:0;
 }
-.buttonnaveback{
+.buttonNavBack{
     color:rgb(224, 224, 224);
     font-size:1.4em;
     font-weight:500;
@@ -386,25 +382,25 @@ hr{
     position: absolute;
     left: -999px;
 }
-.hovermenu1{
+.hoverMenu1{
     display: none;
 }
-.hovermenu1 li:hover {
+.hoverMenu1 li:hover {
     background-color:rgb(11, 159, 192);
 }
-.dropdown1:hover .hovermenu1 {
+.dropdown1:hover .hoverMenu1 {
     display: block;
 }
-.hovermenu2{
+.hoverMenu2{
     display: none;
 }
-.hovermenu2 li:hover {
+.hoverMenu2 li:hover {
     background-color:rgb(11, 159, 192);
 }
-.dropdown2:hover .hovermenu2 {
+.dropdown2:hover .hoverMenu2 {
     display: block;
 }
-.sublist{
+.subList{
     list-style-type:none;
     padding:10px 0 10px 60px;
     margin-left:-35px;
@@ -428,14 +424,13 @@ hr{
 .spriteHelp {
 	background: url("./Images/body/left-navi.png") no-repeat 8px -509px;
 }
-.taskbody2{
+.taskBody2{
     flex-direction: column;
     width:80%;
 }
 .startTask{
     flex-direction: row;
     justify-content: space-between;
-    /* margin: 11px 3% 15px 3%; */
     padding: 1% 3%;
     border: 1px solid rgb(194, 188, 188);
 }
@@ -452,33 +447,31 @@ hr{
 .startTask2{
     justify-content: space-between;
     background: url("./Images/body/a.png");
-    padding:1%;
-    /* border-width:1px 0 1px 0; */
-    /* border-style: solid; */
+    padding:1%;   
     border: 1px solid rgb(194, 188, 188);
-    /* border-bottom: hidden; */
-    /* border-top: hidden; */
-    /* border-color: rgb(194, 188, 188) ; */
+    background-color: #ccc;
+  
 }
-.tasks12page{
+.tasksPage{
     padding-top:3px;
     color:rgb(66, 66, 66);
 }
 .statusTableBorder1{
-    border:1px solid rgb(177, 174, 174);
+    border:1px solid grey;
     margin:0;
     border-radius: 5px;
+    background-color: #ccc;
 }
 .perBorder{
-    background-color: rgb(255, 248, 248);
+    background-color:#ccc;
     cursor: pointer;
     border: none;
-    border-right:1px solid rgb(177, 174, 174);
+    border-right:1px solid grey;
     padding:0 20px 0 20px; 
 }
 
 .perBorder1{
-    background-color: rgb(255, 248, 248);
+    background-color: #ccc;
     border:none;
     padding:0 30px 0 20px; 
 }
@@ -491,9 +484,9 @@ hr{
     color:rgb(66, 66, 66);
     padding:1px 20px 1px 20px; 
     margin-left:12px;
-    border:1px solid rgb(194, 188, 188) ;
+    border:1px solid grey ;
     border-radius: 5px;
-    background-color: rgb(255, 248, 248);
+    background-color: #ccc;
 }
 .imagesValue{
     width:96px;
@@ -501,8 +494,8 @@ hr{
     margin:6px 0 6px 20px;
     border:1px solid rgb(194, 188, 188) ;
 }
-.starttak3{
-    border:1px solid rgb(194, 188, 188) ;
+.startTask3{
+    border:1px solid #ddd ;
 }
 .fontsizeSmallData{
     font-size: x-small;
@@ -528,15 +521,16 @@ hr{
 .directionColumn{
     flex-direction: column;
     margin:0 5px 6px 6px;
+    width: 70%;
 }
 .taskHeadFont{
     margin:0 0 5px 0;
     font-size:1.2em
 }
-.paratask{
+.paraTask{
     justify-content: space-between;
 }
-.paratask1{
+.paraTask1{
     margin:0 0 5px 0;
     width:97%;
 } 
@@ -546,15 +540,15 @@ hr{
     cursor: pointer;
 }
 
-.paratask3{
+.paraTask3{
     color:rgb(128, 125, 125);
     margin:0 20px 5px 0;
 }
-.forhazardTextMargin{
+.forHazardTextMargin{
     margin-bottom:0;
 }
 .severity{
-    margin-left:20px;
+    margin:auto;
 }
 .iconsButtonBorder{
     border-collapse: collapse;
@@ -562,7 +556,7 @@ hr{
     height:20px; 
     padding-left:25px;
 }
-.merime{
+.setWidth{
     width:240px;
 }
 .allBorderColor{
@@ -609,21 +603,25 @@ hr{
     text-align: left;
     padding-left:10%;
 }
-.attachment{
-    margin:25px 10px 0 120px;
-}
+
 .attachmentButton{
     background: url(./Images/body/attachment.png) no-repeat;
     padding-left: 20px;
 }
-.footinmargin{
+.footMargin{
     margin-right: 9%;
     text-align: right;
 }
-.copyrightLine{
+.copyRightLine{
     color:rgb(128, 125, 125);
 }
 
 .borderNone{
     border: none;
+}
+.alternativeColor>:nth-child(even){
+    background-color: #eee;
+}
+.updatedDate{
+    font-size: 0.8em;
 }
