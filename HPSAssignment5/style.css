@@ -216,6 +216,25 @@ button {
     border: 1px solid grey;
 
 }
+.riskLevel{
+    font-size: small;
+    font-weight: 600;
+}
+.location{
+    font-size: small;
+    font-weight: 600;
+}
+.DepartmentDivisionSection{
+    font-weight: 600;
+    font-size: small;
+
+}
+.completedBetween{
+    font-weight: 600;
+    font-size: small;
+
+}
+
 
 .status {
     width: 20px;
