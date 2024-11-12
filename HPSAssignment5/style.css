@@ -1,0 +1,562 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.backgroundImage {
+    background-image: url(./Images/hdr-bg.jpg);
+    height: 100px;
+    width: 100%;
+
+}
+
+.searchJobTasks {
+    color: white;
+    padding: 14px;
+    color: rgb(224, 224, 224);
+    border-right: 2px solid rgb(80, 78, 78);
+    border-left: 2px solid rgb(80, 78, 78);
+
+}
+
+.injuryPrevention {
+    padding: 14px;
+    border-right: 2px solid rgb(80, 78, 78);
+    color: white;
+}
+
+.searchJobTasks:hover {
+
+    background-color: black;
+    background-image: url(./Images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.injuryPrevention:hover {
+    background-color: black;
+    background-image: url(./Images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.firstHeaderNav {
+    margin: 0% 10%;
+    justify-content: space-between;
+}
+
+.display {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.displayflex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.remedySearchJobInjuripreventionContainer {
+
+    width: 50%;
+    align-items: center;
+    display: flex;
+}
+
+.devidIssa {
+
+    color: white;
+}
+
+.divIssaLogOutContainer {
+
+    float: right;
+
+}
+
+button {
+    background-color: transparent;
+    color: white;
+}
+
+.secondHeaderNav {
+    margin: 0% 10%;
+}
+
+.paddingMargin {
+    margin-top: 16px;
+    padding: 8px 18px 7.5px 18px;
+}
+
+.new {
+    margin-left: auto;
+    border: 1px solid grey;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(11, 159, 192);
+}
+
+.hover:hover {
+    background-color: white;
+    color: rgb(11, 159, 192);
+    border-radius: 5px;
+}
+
+.bodyContainer {
+
+    width: calc(100% - 18%);
+    margin: auto;
+
+}
+
+.searchJobsTask {
+    font-size: x-large;
+    padding: 1% 0%;
+}
+
+.searchJobsAndTasksContainer {
+    width: 90%;
+}
+
+.searchBar {
+    width: 70%;
+    margin: 0;
+    padding: 7px 8px;
+
+}
+
+.submit {
+    color: black;
+    padding: 0% 1% 1% 1%;
+    margin: 0;
+    border: none;
+}
+
+.search {
+    color: black;
+    height: 33px;
+    text-align: center;
+    width: 114px;
+    background-color: grey;
+    border: none;
+    cursor: pointer;
+}
+.search:active{
+    background-color: #aaa;
+}
+
+.searchAndButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.checkboxContainer {
+    padding-right: 2%;
+}
+
+.reset {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.SearchAdvancedResetImageContainer {
+    border: 1px solid #ccc;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    border-top: hidden;
+}
+
+
+/* grid starts from here */
+.gridmainContentContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    background-color: #ccc;
+}
+
+.gridItem {
+    border: 1px solid grey;
+    margin: 12px 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.gridItem:nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+.displaycolumn {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+}
+
+.riskAssessmentkDetails {
+    padding: 5px 1%;
+    border: 1px solid grey;
+
+}
+
+.status {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+.labelStatus {
+    padding: 5px 1%;
+    border: 1px solid grey;
+}
+
+.buttonArrow {
+    float: right;
+    background-image: url(./Images/th-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.greenBackgroundImage {
+    background-image: url(./Images/green-color.jpg);
+    height: 35px;
+    width: 80px;
+    border-radius: 3px;
+    border: 1px solid #24c824;
+    color: white;
+    margin: 2px 20px;
+    align-content: center;
+    text-align: center;
+
+}
+
+.orangeBackgroundImage {
+
+    background-image: url(./Images/orange-color.jpg);
+    height: 35px;
+    width: 80px;
+    border-radius: 3px;
+    border: 1px solid orange;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin: 2px 20px;
+}
+
+.redgreenBackgroundImage {
+    background-image: url(./Images/red-color.jpg);
+    height: 35px;
+    width: 80px;
+    border-radius: 3px;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin: 2px 20px;
+}
+
+.sideScrollBar {
+    border: 1px solid grey;
+    overflow-y: scroll;
+    height: 100px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.imageSpanHover:hover {
+    background-color: rgb(11, 159, 192);
+}
+
+.hazardTypeContainer {
+    margin-left: auto;
+    width: 40%;
+    padding: 1%;
+}
+
+.labelStatusCountry {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    padding: 8px 12%;
+    border: 1px solid grey;
+}
+
+.location {
+    float: left;
+}
+
+.labelStatusState {
+    padding: 8px 12%;
+    border: 1px solid grey;
+}
+
+.labelStatusCity {
+    padding: 8px 12%;
+    border: 1px solid grey;
+}
+
+.countryStateCityContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.countrySpan {
+    float: left;
+}
+
+.labelStatusDepartment {
+    padding: 8px 12%;
+    border: 1px solid grey;
+}
+
+.labelStatusDivision {
+
+    padding: 8px 12%;
+    border: 1px solid grey;
+}
+
+.labelStatusSection {
+    padding: 8px 12%;
+    border: 1px solid grey;
+}
+
+.ContainerFordisplayLocationContryStateCity {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.selectwidthheight {
+    border: 1px solid grey;
+    width: 25%;
+    height: 30px;
+    margin-right: 8%;
+    margin-bottom: 1%;
+}
+
+.borderbottomPadding {
+    border-bottom: 1px solid grey;
+    padding: 12px;
+}
+
+.date-input {
+    position: relative;
+    display: inline-block;
+    margin-right: 8%;
+    margin-bottom: 1.5%;
+}
+
+.date-input input {
+    padding: 5px 0%;
+    padding-top: 8.5px;
+    border: 1px solid grey;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.startLabel {
+    background-color: #ccc;
+    padding: 4px;
+    border: 1px solid grey;
+    border-right: hidden;
+    margin-right: -5px;
+
+}
+
+.applyChanges {
+    color: black;
+    border: 1px solid grey;
+    background-color: grey;
+    height: 35px;
+    width: 18%;
+    border-radius: 2px
+}
+
+.applyChanges:active {
+    background-color: #aaa;
+}
+
+.applyChanges:hover {
+    cursor: pointer;
+}
+
+.completedBetweenContainer {
+    padding: 10px;
+}
+
+.first {
+    color: grey;
+    background-color: #ccc;
+    border: 1px solid gray;
+    padding-top: 3px;
+    width: 52px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.first:active {
+    background-color: #aaa;
+}
+
+.last:active {
+    background-color: #aaa;
+}
+
+.arrowimagePadding {
+    border: 1px solid grey;
+    padding: 0% 2%;
+    width: 18px;
+    height: 17px;
+    margin-left: 11px;
+    margin-bottom: -4px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.arrowimagePadding:active {
+    background-color: #aaa;
+}
+
+.padding {
+    padding: 1%;
+}
+
+.last {
+    color: grey;
+    background-color: #ccc;
+    border: 1px solid gray;
+    width: 52px;
+    margin-left: 12px;
+    padding-top: 3px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.hover:hover {
+    background-color: rgb(11, 159, 192);
+    color: black;
+}
+
+.hover:active {
+    background-color: rgb(119, 211, 231);
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    background-color: #ccc;
+    padding: 1%;
+    margin: 0;
+}
+
+.gridItem:nth-child(4) {
+    grid-column: 1 / -1;
+}
+
+.alternativeColor>div:nth-child(even) {
+    background-color: #ccc;
+
+}
+
+.firstToLast {
+    width: 30%;
+    cursor: pointer;
+}
+
+table,
+th,
+tr,
+td {
+    border-bottom: 1px solid grey;
+}
+
+tr {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: justify;
+}
+
+.gridItem:nth-child(5) {
+    grid-column: 1 / -1;
+}
+
+.specificTableCoumnPadding {
+    display: flex;
+    padding: 0px 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.tablegrid {
+    margin: 0;
+    border-bottom: none;
+}
+
+td,
+th {
+    padding: 5px;
+    cursor: pointer;
+}
+
+th {
+    padding: -0.5% 18px;
+    font-size: small;
+}
+
+.tableImage {
+    padding: 5px 10px;
+}
+
+.spanNameTaskPadding {
+    padding: 1.5%;
+}
+
+.paddingTaskName {
+    padding-left: 20px;
+}
+
+.ImageJobTaskName {
+    background-image: url(./Images/rght-btn.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}

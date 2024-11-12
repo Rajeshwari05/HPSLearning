@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="mainContainer display">
+        <div class="backgroundImage">
+            <div class="firstHeaderNav displayflex">
+                <div class="remedysearchJobTaskInjury displayflex ">
+                    <img class="remedyLogoImg" src="./Images/remedy-logo.gif">
+                    <span class="searchJobTasks">Search Job & Tasks</span>
+                    <span class="injuryPrevention">Injury Prevention</span>
+                </div>
+                <div class="divIssaLogOutContainer displayflex">
+                    <span class="devidIssa">Welcome,David Issa |</span>
+                    <button class="logOut">LOG OUT</button>
+                </div>
+            </div>
+            <div class="secondHeaderNav displayflex">
+                <span class="dashBoard paddingMargin hover">Dashboard</span>
+                <span class="jobsTasks paddingMargin hover">Jobs/Tasks</span>
+                <span class="hazardQueue paddingMargin hover">Hazard Queue</span>
+                <span class="reports paddingMargin hover">Reports</span>
+                <span class="help paddingMargin hover">Help</span>
+                <span class="new">+New</span>
+            </div>
+        </div>
+        <div class="bodyContainer">
+            <div class="SearchAdvancedResetImageContainer displayflex">
+                <div class="searchJobsAndTasksContainer ">
+                    <div class="searchJobsTask">Search Jobs & Tasks</div>
+                    <div class="searchContainer">
+                        <form action=" ">
+                            <div class="searchAndButton">
+                                <input type="search" class="searchBar" placeholder="Keyword Search" name="search">
+                                <label class="search">
+                                    <button class="search">Search</button>
+                                </label>
+                            </div><br>
+                            <label class="checkboxContainer">
+                                <input type="checkbox" class="checkbox"> ADVANCED FILTER</label>
+                            <input type="reset" value="RESET ALL" class="reset">
+                        </form>
+                    </div>
+                </div>
+                <img src="./Images/bstro-logo.gif">
+            </div>
+            <div class="gridmainContentContainer">
+                <div class=" gridItem">
+                    <div class="riskAssissment displaycolumn">
+                        <span class="riskAssessmentkDetails">riskAssessmentkDetails</span><br>
+                        <label class="labelStatus">
+                            <span>status </span>
+                            <select class="status">
+                                <option value=""></option>
+                                <option value="status1">status1</option>
+                                <option value="status2">status2</option>
+                                <option value="status3">status3</option>
+                                <option value="status4">status4</option>
+                                <option value="status5">status5</option>
+                            </select>
+                        </label><br>
+                        <label class="labelStatus">
+                            <span>Risk Assessor Name </span>
+                            <select class="status">
+                                <option value=""></option>
+                                <option value="status1">Assessor Name1</option>
+                                <option value="status2">Assessor Name2</option>
+                                <option value="status3">Assessor Name3</option>
+                                <option value="status4">Assessor Name4</option>
+                                <option value="status5">Assessor Name5</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="riskLevelAndHazardType gridItem displayflex ">
+
+                    <div class="riskLevel displaycolumn ">
+                        <span class="riskLevel">RISK LEVEL</span>
+                        <div class="displayflex">
+                            <input type="checkbox" name="checkbox">
+                            <div class="greenBackgroundImage">1-10</div>
+                            <span class="minor">Minor</span>
+                        </div>
+                        <div class="displayflex">
+                            <input type="checkbox" name="checkbox">
+                            <div class="orangeBackgroundImage">1-10</div>
+                            <span class="minor">Severe</span>
+                        </div>
+                        <div class="displayflex" name="checkbox">
+                            <input type="checkbox">
+                            <div class="redgreenBackgroundImage">1-10</div>
+                            <span class="minor">Major</span>
+                        </div>
+
+                    </div>
+                    <div class="hazardTypeContainer">
+                        <span>Hazard TYPE</span>
+                        <div class="sideScrollBar ">
+                            <div class="imageSpan1 imageSpanHover displayflex">
+                                <img src="./Images/icon1-active.png">
+                                <span class="radiological">Radio Logical</span>
+                            </div>
+                            <div class="imageSpan2 imageSpanHover displayflex">
+                                <img src="./Images/icon2-active.png">
+                                <span class="radiological">Chemical</span>
+                            </div>
+                            <div class="imageSpan3 imageSpanHover displayflex">
+                                <img src="./Images/icon3-active.png">
+                                <span class="radiological">Electrical</span>
+                            </div>
+                            <div class="imageSpan4 imageSpanHover displayflex">
+                                <img src="./Images/icon4-active.png">
+                                <span class="radiological">Ergonomical</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="locationcountryStateCityContainer gridItem">
+                    <div class="locationContainer borderbottomPadding">
+                        <span>Location</span>
+                        <br>
+                        <!-- <label for="country"  ></label> -->
+                        <select name="Country" class="country selectwidthheight">
+                            <option value="" selected disabled>Country</option>
+                            <option>India</option>
+                            <option>Pakistan</option>
+                            <option>Germany</option>
+                            <option>China</option>
+                        </select>
+                        <!-- ---------------------------- -->
+                        <select name="state" class="state selectwidthheight">
+                            <option value="" selected disabled>State</option>
+                            <option>state1</option>
+                            <option>state2</option>
+                            <option>state3</option>
+                            <option>state4</option>
+                        </select>
+                        <!-- --------------------------- -->
+                        <select name="city" class="city selectwidthheight">
+                            <option value="" selected disabled>City</option>
+                            <option>city1</option>
+                            <option>city2</option>
+                            <option>city3</option>
+                            <option>city4</option>
+                        </select>
+
+                    </div>
+                    <div class="departmentDivisionSectionContainer borderbottomPadding">
+                        <span>DEPPARTMENT/DIVISION/SECTION</span>
+                        <br>
+                        <select name="department" class="department selectwidthheight">
+                            <option value="" selected disabled>Department</option>
+                            <option>department1</option>
+                            <option>department2</option>
+                            <option>department3</option>
+                            <option>department4</option>
+                        </select>
+                        <!-- ---------------------------- -->
+                        <select name="division" class="division selectwidthheight">
+                            <option value="" selected disabled>Division</option>
+                            <option>division1</option>
+                            <option>division2</option>
+                            <option>division3</option>
+                            <option>division4</option>
+                        </select>
+                        <!-- --------------------------- -->
+                        <select name="section" class="section selectwidthheight">
+                            <option value="" selected disabled>Section</option>
+                            <option>section1</option>
+                            <option>section2</option>
+                            <option>section3</option>
+                            <option>section4</option>
+                        </select>
+
+                        <select name="where" class="where selectwidthheight">
+                            <option value="" selected disabled>Where</option>
+                            <option>where1</option>
+                            <option>where2</option>
+                            <option>where3</option>
+                            <option>where4</option>
+                        </select>
+                        <!-- --------------------------- -->
+                        <select name="otherfield" class="otherfield selectwidthheight">
+                            <option value="" selected disabled>Other Field</option>
+                            <option>otherfield1</option>
+                            <option>otherfield2</option>
+                            <option>otherfield3</option>
+                            <option>otherfield4</option>
+                        </select>
+                    </div>
+
+                    <div class="completedBetweenContainer ">
+                        <span>DEPPARTMENT/DIVISION/SECTION</span><br>
+                        <div class="date-input ">
+                            <label for="start-date" class="startLabel">START</label>
+                            <input type="text" class="start-date" placeholder="MM/DD/YYYY">
+                            <img src="./Images/cal.png" class="calendar-icon">
+                        </div>
+                        <div class="date-input ">
+                            <label for="start-date" class="startLabel">End</label>
+                            <input type="text" class="start-date" placeholder="MM/DD/YYYY">
+                            <img src="./Images/cal.png" class="calendar-icon">
+                        </div>
+                        <button type="submit" value="Apply Changes" class="applyChanges">Apply Changes</button>
+                    </div>
+                </div>
+                <div class="pages gridItem">
+                    <div class="firstToLast">
+                        <button class="first">First</button>
+                        <img class="arrowimagePadding" src="./Images/v_navi_arrow.png">
+                        <span class="one padding border-radius hover">1</span>
+                        <span class="two padding border-radius hover">2</span>
+                        <span class="three padding border-radius hover">3</span>
+                        <span class="four padding border-radius hover">4</span>
+                        <span class="five padding border-radius hover">5</span>
+                        <img class="arrowimagePadding" src="./Images/v_navi_backarrow.png">
+                        <button class="last">Last</button>
+                    </div>
+                    <div class="show">
+                        <label for="show">Show : </label>
+                        <select>
+                            <option value="10">10</option>
+                            <option value="9">9</option>
+                            <option value="8">8</option>
+                            <option value="7">7</option>
+                            <option value="6">6</option>
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <span>Showing 1 to 10 of 4088 items</span>
+
+                </div>
+
+                <div class="tablegrid gridItem">
+                    <table>
+                        <tr>
+                            <th class="specificTableCoumnPadding spanNameTaskPadding paddingTaskName ImageJobTaskName">
+                                JOB/TASK NAME</th>
+                            <th class="ImageJobTaskName">RISK ASSESSOR</th>
+                            <th class="ImageJobTaskName">CURRENT STATUS</th>
+                            <th class="ImageJobTaskName">LAST COMPLETED</th>
+                        </tr>
+                        <tr>
+                            <td class="specificTableCoumnPadding">
+                                <img class="tableImage" src="./Images/job.png">
+                                <span class="spanNameTaskPadding">This is a job Name</span>
+                            </td>
+                            <td>Jhn Smith</td>
+                            <td>Open Pedding Approval</td>
+                            <td>0328011</td>
+                        </tr>
+                        <tr>
+                            <td class="specificTableCoumnPadding">
+                                <img class="tableImage" src="./Images/task.png">
+                                <span class="spanNameTaskPadding">This is a Task Name</span>
+                            </td>
+                            <td>Theodore Rosevelt</td>
+                            <td>Open Pedding Approval</td>
+                            <td>0328011</td>
+                        </tr>
+                        <tr>
+                            <td class="specificTableCoumnPadding">
+                                <img class="tableImage" src="./Images/job.png">
+                                <span class="spanNameTaskPadding">This is a job Name</span>
+                            </td>
+                            <td>Jhn Smith</td>
+                            <td>Open Pedding Approval</td>
+                            <td>0328011</td>
+                        </tr>
+                        <tr>
+                            <td class="specificTableCoumnPadding">
+                                <img class="tableImage" src="./Images/task.png">
+                                <span class="spanNameTaskPadding">This is a Task Name</span>
+                            </td>
+                            <td>Theodore Rosevelt</td>
+                            <td>Open Pedding Approval</td>
+                            <td>0328011</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+            <footer>
+                <p>&copy;Copyright 2012. Remedy Interactive | PRIVACY POLICY</p>
+            </footer>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
