@@ -27,6 +27,7 @@ body {
     color: rgb(224, 224, 224);
     border-right: 2px solid rgb(80, 78, 78);
     border-left: 2px solid rgb(80, 78, 78);
+    cursor: pointer;
 
 }
 
@@ -42,6 +43,8 @@ body {
     background-image: url(./Images/arrow.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    cursor: pointer;
+
 }
 
 .injuryPrevention:hover {
@@ -49,6 +52,7 @@ body {
     background-image: url(./Images/arrow.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    cursor: pointer;
 }
 
 .firstHeaderNav {
@@ -77,8 +81,9 @@ body {
 }
 
 .devidIssa {
-
+    margin-right: 5px;
     color: white;
+    font-size: small;
 }
 
 .divIssaLogOutContainer {
@@ -86,11 +91,20 @@ body {
     float: right;
 
 }
+.logOut{
+    margin-top: 5px;
+    font-size: 12px;
+    border: none;
+}
 
 button {
     background-color: transparent;
     color: white;
+    cursor: pointer;
+    /* margin-top: 5px; */
+    font-weight: lighter;
 }
+
 
 .secondHeaderNav {
     margin: 0% 10%;
@@ -118,14 +132,14 @@ button {
 
 .bodyContainer {
 
-    width: calc(100% - 18%);
+    width: calc(100% - 20%);
     margin: auto;
-
+    
 }
 
 .searchJobsTask {
     font-size: x-large;
-    padding: 1% 0%;
+    padding: 10px 0px;
 }
 
 .searchJobsAndTasksContainer {
@@ -133,11 +147,21 @@ button {
 }
 
 .searchBar {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: hidden;
+    /* border-color: grey; */
+    height: 31.5px;
     width: 70%;
-    margin: 0;
+    margin: -1px;
     padding: 7px 8px;
 
+
 }
+/* input[type=text]:focus {
+    border: 1px solid #555;
+    border-right: hidden;
+} */
 
 .submit {
     color: black;
@@ -147,13 +171,16 @@ button {
 }
 
 .search {
-    color: black;
-    height: 33px;
+    color: white;
+    height: 31.5px;
     text-align: center;
     width: 114px;
     background-color: grey;
     border: none;
     cursor: pointer;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-weight: bold;
 }
 .search:active{
     background-color: #aaa;
@@ -170,18 +197,29 @@ button {
 .checkboxContainer {
     padding-right: 2%;
 }
+.checkbox{
+    font-size: small;
+    font-weight: 500;
+    accent-color: #ccc; 
+}
+input.checkbox{
+    margin:11px 2px 20px 0px;
+}
 
 .reset {
     background-color: white;
     border: none;
     color: black;
+    font-size: 12px;
+    /* font-size: small; */
+    font-weight: 500;
 }
 
 .SearchAdvancedResetImageContainer {
     border: 1px solid #ccc;
-    padding-left: 1%;
-    padding-bottom: 1%;
+    padding-left: 30px;
     border-top: hidden;
+    border-bottom: hidden;
 }
 
 
@@ -191,11 +229,12 @@ button {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     background-color: #ccc;
+    border: 1px solid grey;
 }
 
 .gridItem {
     border: 1px solid grey;
-    margin: 12px 30px;
+    margin: 18px 30px;
     border-radius: 5px;
     background-color: white;
 }
@@ -208,17 +247,23 @@ button {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 10px;
+    padding: 20px 16px 30px 16px;
 }
 
-.riskAssessmentkDetails {
+.SbstaskProjectName {
     padding: 5px 1%;
     border: 1px solid grey;
-
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.riskAssissmentDetails{
+    font-size: small;
+    font-weight: 600;
 }
 .riskLevel{
     font-size: small;
     font-weight: 600;
+    padding: 0px 25px 13px 15px;
 }
 .location{
     font-size: small;
@@ -236,30 +281,109 @@ button {
 }
 
 
-.status {
+/* .status {
     width: 20px;
     float: right;
     cursor: pointer;
-}
+} */
 
 .labelStatus {
     padding: 5px 1%;
     border: 1px solid grey;
+    border-radius: 3px;
+    padding: 7px;
+    padding-right: 30px;
+   
+
+}
+.customArrow{
+    width: -webkit-fill-available;
+    background-image: url('./Images/th-img.png') ;
+    background-repeat: no-repeat no-repeat;
+    background-position: right .7em top 50% ;
+    appearance: none;
+    border: 1px solid grey;
+    
+
+}
+.showCustomArrow{
+    width: -webkit-fill-available;
+    background-image: url('./Images/th-img.png') ;
+    background-repeat: no-repeat no-repeat;
+    background-position: right top 50% ;
+    appearance: none;
+    border: 1px solid grey;
+}
+.show{
+    width: 10%;
 }
 
-.buttonArrow {
+.showCustomArrowShow{
+    width: 27%;
+    padding-left: 5px;
+}
+
+.border-for-image{
+    position: relative;
+}
+
+.border-for-image:after{
+position: absolute;
+top:0;
+right: 30px;
+height: 30px;
+content: "";
+border-left: 1px solid grey;
+}
+.locationForCustomArrow{
+position: relative;  
+width: 25%; 
+margin-bottom: 15px; 
+}
+.locationForCustomArrow:after{
+    position: absolute;
+    border-left: 1px solid grey;
+    top:4px;
+    right: 30px;
+    height: 28px;
+    content: "";
+
+}
+
+.displayFlexJustifyContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.marginForWhereOtherField{
+    margin-right: 20%;
+}
+.gap{
+    gap: 12.5%;
+}
+
+
+
+
+/* =========================this========== */
+/* .status {
     float: right;
     background-image: url(./Images/th-img.png);
     background-repeat: no-repeat;
-    background-size: contain;
-}
+    background-size: auto;
+    background-position-x:99.5% ;
+    
+} */
+
+
+ 
 
 .greenBackgroundImage {
     background-image: url(./Images/green-color.jpg);
-    height: 35px;
-    width: 80px;
+    height: 40px;
+    width: 100px;
     border-radius: 3px;
-    border: 1px solid #24c824;
+    border: 1px solid green;
     color: white;
     margin: 2px 20px;
     align-content: center;
@@ -270,8 +394,8 @@ button {
 .orangeBackgroundImage {
 
     background-image: url(./Images/orange-color.jpg);
-    height: 35px;
-    width: 80px;
+    height: 40px;
+    width: 100px;
     border-radius: 3px;
     border: 1px solid orange;
     color: white;
@@ -282,8 +406,8 @@ button {
 
 .redgreenBackgroundImage {
     background-image: url(./Images/red-color.jpg);
-    height: 35px;
-    width: 80px;
+    height: 40px;
+    width: 100px;
     border-radius: 3px;
     border: 1px solid red;
     color: white;
@@ -295,10 +419,11 @@ button {
 .sideScrollBar {
     border: 1px solid grey;
     overflow-y: scroll;
-    height: 100px;
-    line-height: 30px;
+    height: 132px;
+    line-height: 34px;
     cursor: pointer;
 }
+
 
 .imageSpanHover:hover {
     background-color: rgb(11, 159, 192);
@@ -306,8 +431,14 @@ button {
 
 .hazardTypeContainer {
     margin-left: auto;
+    margin-left: auto;
     width: 40%;
-    padding: 1%;
+    height: 145px;
+    padding: 0px 25px 30px 12px;
+}
+.hazardType{
+    font-size: small;
+    font-weight: 500;
 }
 
 .labelStatusCountry {
@@ -339,8 +470,10 @@ button {
     justify-content: space-between;
 }
 
-.countrySpan {
-    float: left;
+.paddingSelect {
+    /* float: left; */
+    padding: 6px;
+    margin-top: 3px;
 }
 
 .labelStatusDepartment {
@@ -367,28 +500,59 @@ button {
 
 .selectwidthheight {
     border: 1px solid grey;
-    width: 25%;
+    width: 100%;
     height: 30px;
-    margin-right: 8%;
-    margin-bottom: 1%;
+    margin: 3px 8% 1.3% 0%;
+    border-radius: 3px;
 }
 
-.borderbottomPadding {
+.borderbottomPaddingLocation {
     border-bottom: 1px solid grey;
-    padding: 12px;
+    /* padding-top: 5px;
+    padding-left: 1%; */
+    padding: 5px 25px 0px 16px;
+}
+.borderbottomPaddingDepartmentDevisionSection{
+    border-bottom: 1px solid grey;
+    /* padding-top: 5px;
+    padding-left: 1%; */
+    padding: 5px 25px 0px 16px;
 }
 
 .date-input {
     position: relative;
     display: inline-block;
-    margin-right: 8%;
-    margin-bottom: 1.5%;
-}
+    margin: 5px 8% 1.5% 0%;
+   
+} 
 
+/* --------------------------------------------- */
+/* input[type="checkbox"] {
+    display: inline-block;
+    margin: 11px 2px 11px 0px;
+  }
+input[type="checkbox"]:checked ~ input[type="checkbox"] {
+    pointer-events: none;
+    opacity: 0.5;
+} */
+/* .................................... */
+input[type="date"]{
+    /* height: auto;
+    width: auto; */
+    background-image: url(.//Images/cal.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    outline: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+}
 .date-input input {
     padding: 5px 0%;
     padding-top: 8.5px;
     border: 1px solid grey;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .calendar-icon {
@@ -401,20 +565,25 @@ button {
 
 .startLabel {
     background-color: #ccc;
-    padding: 4px;
+        padding: 5px 10px 5px 6px;
+
     border: 1px solid grey;
     border-right: hidden;
     margin-right: -5px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 
 }
 
 .applyChanges {
-    color: black;
+    color: white;
     border: 1px solid grey;
     background-color: grey;
     height: 35px;
     width: 18%;
-    border-radius: 2px
+    border-radius: 2px;
+    font-weight: bold;
+    
 }
 
 .applyChanges:active {
@@ -426,7 +595,8 @@ button {
 }
 
 .completedBetweenContainer {
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 5px 0% 0% 1%;
 }
 
 .first {
@@ -434,9 +604,11 @@ button {
     background-color: #ccc;
     border: 1px solid gray;
     padding-top: 3px;
-    width: 52px;
-    border-radius: 2px;
+    width: 40px;
+    height: 25px;
+    border-radius: 5px;
     cursor: pointer;
+    margin-right: 12px;
 }
 
 .first:active {
@@ -447,7 +619,7 @@ button {
     background-color: #aaa;
 }
 
-.arrowimagePadding {
+.arrowImagePadding {
     border: 1px solid grey;
     padding: 0% 2%;
     width: 18px;
@@ -457,33 +629,65 @@ button {
     background-color: #ccc;
     cursor: pointer;
 }
+.spanArrowImagePadding{
+    color: black;
+    background-color: #ccc;
+    border: 1px solid gray;
+    padding: 0px 12px 2px 12px;
+    /* margin-left: 10px; */
+    /* width: 40px;
+    height: 25px; */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.spanArrowImagePadding:active{
+    background-color: #aaa;
 
-.arrowimagePadding:active {
+}
+.arrowImagePadding:active {
     background-color: #aaa;
 }
 
 .padding {
-    padding: 1%;
+    padding: 1px 5px 1px 5px;
 }
 
 .last {
-    color: grey;
+    /* color: grey;
     background-color: #ccc;
     border: 1px solid gray;
     width: 52px;
     margin-left: 12px;
     padding-top: 3px;
-    border-radius: 2px;
+    border-radius: 5px;
+    cursor: pointer; */
+
+    color: grey;
+    background-color: #ccc;
+    border: 1px solid gray;
+    /* padding-top: 3px; */
+    width: 40px;
+    height: 25px;
+    margin-left: 12px;
+
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .hover:hover {
-    background-color: rgb(11, 159, 192);
-    color: black;
+    background-color:rgb(25, 96, 155);
+    color: white;
+    cursor: pointer;
+}
+.navHover:hover{
+    background-color:white;
+    color:  rgb(43, 172, 204);
+    cursor: pointer;
 }
 
 .hover:active {
-    background-color: rgb(119, 211, 231);
+    background-color: rgb(43, 172, 204);
 }
 
 .pages {
@@ -492,7 +696,7 @@ button {
     justify-content: space-between;
     border: none;
     background-color: #ccc;
-    padding: 1%;
+    padding: 0px 20px 10px 20px;
     margin: 0;
 }
 
@@ -506,7 +710,6 @@ button {
 }
 
 .firstToLast {
-    width: 30%;
     cursor: pointer;
 }
 
@@ -555,8 +758,7 @@ th {
 }
 
 .tableImage {
-    padding: 5px 10px;
-}
+    padding: 5px 10px 5px 0px;}
 
 .spanNameTaskPadding {
     padding: 1.5%;
@@ -565,6 +767,16 @@ th {
 .paddingTaskName {
     padding-left: 20px;
 }
+/* .specificTableCoumnPadding{
+    background-image: url(./Images/drop-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+} */
+ .jobTaskNameDownArrow{
+
+ }
 
 .ImageJobTaskName {
     background-image: url(./Images/rght-btn.gif);
@@ -572,10 +784,17 @@ th {
     background-size: cover;
 
 }
+.jobTaskNameDropDownArrow{
+    margin: 3px 0px 3px 15px;
+}
 
 footer {
     width: 100%;
     display: flex;
     justify-content: right;
     text-align: right;
+}
+
+.background-image-div{
+    width: 100%;
 }

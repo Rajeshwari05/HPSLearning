@@ -9,6 +9,7 @@
 
 <body>
     <div class="mainContainer display">
+        
         <div class="backgroundImage">
             <div class="firstHeaderNav displayflex">
                 <div class="remedysearchJobTaskInjury displayflex ">
@@ -17,16 +18,16 @@
                     <span class="injuryPrevention">Injury Prevention</span>
                 </div>
                 <div class="divIssaLogOutContainer displayflex">
-                    <span class="devidIssa">Welcome,David Issa |</span>
+                    <span class="devidIssa">Welcome,David Issa &nbsp; | </span>
                     <button class="logOut">LOG OUT</button>
                 </div>
             </div>
             <div class="secondHeaderNav displayflex">
-                <span class="dashBoard paddingMargin hover">Dashboard</span>
-                <span class="jobsTasks paddingMargin hover">Jobs/Tasks</span>
-                <span class="hazardQueue paddingMargin hover">Hazard Queue</span>
-                <span class="reports paddingMargin hover">Reports</span>
-                <span class="help paddingMargin hover">Help</span>
+                <span class="dashBoard paddingMargin navHover">Dashboard</span>
+                <span class="jobsTasks paddingMargin navHover">Jobs/Tasks</span>
+                <span class="hazardQueue paddingMargin navHover">Hazard Queue</span>
+                <span class="reports paddingMargin navHover">Reports</span>
+                <span class="help paddingMargin navHover">Help</span>
                 <span class="new">+New</span>
             </div>
         </div>
@@ -41,9 +42,10 @@
                                 <label class="search">
                                     <button class="search">Search</button>
                                 </label>
-                            </div><br>
+                            </div>
                             <label class="checkboxContainer">
-                                <input type="checkbox" class="checkbox"> ADVANCED FILTER</label>
+                                <input type="checkbox" class="checkbox"> <span class="checkbox">ADVANCED
+                                    FILTER</span></label>
                             <input type="reset" value="RESET ALL" class="reset">
                         </form>
                     </div>
@@ -53,29 +55,34 @@
             <div class="gridmainContentContainer">
                 <div class=" gridItem">
                     <div class="riskAssissment displaycolumn">
-                        <span class="riskAssessmentkDetails">riskAssessmentkDetails</span><br>
-                        <label class="labelStatus">
-                            <span>status </span>
-                            <select class="status">
-                                <option value=""></option>
+                        <span class="riskAssissmentDetails">RISK ASSISSMENT DETAILS</span>
+                        <input class="SbstaskProjectName" placeholder="SbsTaskProject Name"></input><br>
+
+                        <div class="border-for-image">
+
+                            <select name="Status" class="status customArrow labelStatus">
+                                <option value selected disabled>Status
+                                </option>
                                 <option value="status1">status1</option>
                                 <option value="status2">status2</option>
                                 <option value="status3">status3</option>
                                 <option value="status4">status4</option>
                                 <option value="status5">status5</option>
                             </select>
-                        </label><br>
-                        <label class="labelStatus">
-                            <span>Risk Assessor Name </span>
-                            <select class="status">
-                                <option value=""></option>
-                                <option value="status1">Assessor Name1</option>
-                                <option value="status2">Assessor Name2</option>
-                                <option value="status3">Assessor Name3</option>
-                                <option value="status4">Assessor Name4</option>
-                                <option value="status5">Assessor Name5</option>
+                        </div>
+
+
+                        <br>
+                        <div class="border-for-image">
+                            <select name="Assessor Name" class="assessorName customArrow labelStatus">
+                                <option value selected disabled>Risk Assessor Name</option>
+                                <option value="Assessor Name1">Assessor Name1</option>
+                                <option value="Assessor Name2">Assessor Name2</option>
+                                <option value="Assessor Name3">Assessor Name3</option>
+                                <option value="Assessor Name4">Assessor Name4</option>
+                                <option value="Assessor Name5">Assessor Name5</option>
                             </select>
-                        </label>
+                        </div>
                     </div>
                 </div>
                 <div class="riskLevelAndHazardType gridItem displayflex ">
@@ -83,25 +90,25 @@
                     <div class="riskLevel displaycolumn ">
                         <span class="riskLevel">RISK LEVEL</span>
                         <div class="displayflex">
-                            <input type="checkbox" name="checkbox">
+                            <input type="checkbox" name="minorSeverMajor" id="minor" onclick="chechTogling(event)">
                             <div class="greenBackgroundImage">1-10</div>
                             <span class="minor">Minor</span>
                         </div>
                         <div class="displayflex">
-                            <input type="checkbox" name="checkbox">
+                            <input type="checkbox" name="minorSeverMajor" id="sever" onclick="chechTogling(event)">
                             <div class="orangeBackgroundImage">1-10</div>
                             <span class="minor">Severe</span>
                         </div>
-                        <div class="displayflex" name="checkbox">
-                            <input type="checkbox">
+                        <div class="displayflex">
+                            <input type="checkbox" name="minorSeverMajor" id="major" onclick="chechTogling(event)">
                             <div class="redgreenBackgroundImage">1-10</div>
                             <span class="minor">Major</span>
                         </div>
 
                     </div>
                     <div class="hazardTypeContainer">
-                        <span>Hazard TYPE</span>
-                        <div class="sideScrollBar ">
+                        <span class="hazardType">HAZARD TYPE</span>
+                        <div class="sideScrollBar  ">
                             <div class="imageSpan1 imageSpanHover displayflex">
                                 <img src="./Images/icon1-active.png">
                                 <span class="radiological">Radio Logical</span>
@@ -121,92 +128,115 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="locationcountryStateCityContainer gridItem">
-                    <div class="locationContainer borderbottomPadding">
+                    <div class="locationContainer borderbottomPaddingLocation">
                         <span class="location">LOCATION</span>
                         <br>
                         <!-- <label for="country"  ></label> -->
-                        <select name="Country" class="country selectwidthheight">
-                            <option value="" selected disabled>Country</option>
-                            <option>India</option>
-                            <option>Pakistan</option>
-                            <option>Germany</option>
-                            <option>China</option>
-                        </select>
-                        <!-- ---------------------------- -->
-                        <select name="state" class="state selectwidthheight">
-                            <option value="" selected disabled>State</option>
-                            <option>state1</option>
-                            <option>state2</option>
-                            <option>state3</option>
-                            <option>state4</option>
-                        </select>
-                        <!-- --------------------------- -->
-                        <select name="city" class="city selectwidthheight">
-                            <option value="" selected disabled>City</option>
-                            <option>city1</option>
-                            <option>city2</option>
-                            <option>city3</option>
-                            <option>city4</option>
-                        </select>
+                        <div class="displayFlexJustifyContent">
+                            <div class="locationForCustomArrow">
+
+                                <select name="Country" class="country paddingSelect selectwidthheight customArrow">
+                                    <option value="" selected disabled>Country</option>
+                                    <option>India</option>
+                                    <option>Pakistan</option>
+                                    <option>Germany</option>
+                                    <option>China</option>
+                                </select>
+                            </div>
+
+
+                            <div class="locationForCustomArrow">
+                                <!-- ---------------------------- -->
+                                <select name="state" class="state paddingSelect selectwidthheight customArrow">
+                                    <option value="" selected disabled>State</option>
+                                    <option>state1</option>
+                                    <option>state2</option>
+                                    <option>state3</option>
+                                    <option>state4</option>
+                                </select>
+                            </div>
+                            <!-- --------------------------- -->
+                            <div class="locationForCustomArrow">
+                                <select name="city" class="city paddingSelect selectwidthheight customArrow">
+                                    <option value="" selected disabled>City</option>
+                                    <option>city1</option>
+                                    <option>city2</option>
+                                    <option>city3</option>
+                                    <option>city4</option>
+                                </select>
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="departmentDivisionSectionContainer borderbottomPadding">
+                    <div class="departmentDivisionSectionContainer borderbottomPaddingDepartmentDevisionSection">
                         <span class="DepartmentDivisionSection">DEPPARTMENT/DIVISION/SECTION</span>
                         <br>
-                        <select name="department" class="department selectwidthheight">
-                            <option value="" selected disabled>Department</option>
-                            <option>department1</option>
-                            <option>department2</option>
-                            <option>department3</option>
-                            <option>department4</option>
-                        </select>
-                        <!-- ---------------------------- -->
-                        <select name="division" class="division selectwidthheight">
-                            <option value="" selected disabled>Division</option>
-                            <option>division1</option>
-                            <option>division2</option>
-                            <option>division3</option>
-                            <option>division4</option>
-                        </select>
-                        <!-- --------------------------- -->
-                        <select name="section" class="section selectwidthheight">
-                            <option value="" selected disabled>Section</option>
-                            <option>section1</option>
-                            <option>section2</option>
-                            <option>section3</option>
-                            <option>section4</option>
-                        </select>
-
-                        <select name="where" class="where selectwidthheight">
+                        <div class="displayFlexJustifyContent">
+                            <div class="locationForCustomArrow">
+                                <select name="department" class="department paddingSelect selectwidthheightDDS customArrow">
+                                    <option value="" selected disabled>Department</option>
+                                    <option>department1</option>
+                                    <option>department2</option>
+                                    <option>department3</option>
+                                    <option>department4</option>
+                                </select>
+                            </div>
+                            <!-- ---------------------------- -->
+                            <div class="locationForCustomArrow">
+                            <select name="division" class="division paddingSelect selectwidthheightDDS customArrow">
+                                <option value="" selected disabled>Division</option>
+                                <option>division1</option>
+                                <option>division2</option>
+                                <option>division3</option>
+                                <option>division4</option>
+                            </select>
+                            </div>
+                            <!-- --------------------------- -->
+                            <div class="locationForCustomArrow">
+                            <select name="section" class="section paddingSelect selectwidthheightDDS customArrow">
+                                <option value="" selected disabled>Section</option>
+                                <option>section1</option>
+                                <option>section2</option>
+                                <option>section3</option>
+                                <option>section4</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="displayflex gap" >
+                            <div class="locationForCustomArrow">
+                        <select name="where" class="where selectwidthheight paddingSelect customArrow marginForWhereOtherField">
                             <option value="" selected disabled>Where</option>
                             <option>where1</option>
                             <option>where2</option>
                             <option>where3</option>
                             <option>where4</option>
-                        </select>
+                            </select>
+                            </div>
                         <!-- --------------------------- -->
-                        <select name="otherfield" class="otherfield selectwidthheight">
+                        <div class="locationForCustomArrow">
+                        <select name="otherfield" class="otherfield paddingSelect selectwidthheight customArrow marginForWhere-OtherField">
                             <option value="" selected disabled>Other Field</option>
                             <option>otherfield1</option>
                             <option>otherfield2</option>
                             <option>otherfield3</option>
                             <option>otherfield4</option>
                         </select>
+                        </div>
+                    </div>
                     </div>
 
                     <div class="completedBetweenContainer ">
                         <span class="completedBetween">COMPLETED BETWEEN</span><br>
                         <div class="date-input ">
                             <label for="start-date" class="startLabel">START</label>
-                            <input type="text" class="start-date" placeholder="MM/DD/YYYY">
-                            <img src="./Images/cal.png" class="calendar-icon">
+                            <input type="date" class="start-date">
+                            <!-- <img src="./Images/cal.png" class="calendar-icon"> -->
                         </div>
                         <div class="date-input ">
                             <label for="start-date" class="startLabel">End</label>
-                            <input type="text" class="start-date" placeholder="MM/DD/YYYY">
-                            <img src="./Images/cal.png" class="calendar-icon">
+                            <input type="date" class="start-date">
+                            <!-- <img src="./Images/cal.png" class="calendar-icon"> -->
                         </div>
                         <button type="submit" value="Apply Changes" class="applyChanges">Apply Changes</button>
                     </div>
@@ -214,19 +244,22 @@
                 <div class="pages gridItem">
                     <div class="firstToLast">
                         <button class="first">First</button>
-                        <img class="arrowimagePadding" src="./Images/v_navi_arrow.png">
+                        <!-- <img class="arrowimagePadding" src="./Images/v_navi_arrow.png"> -->
+                         
+                            <span class="spanArrowImagePadding"><</span>
+                         
                         <span class="one padding border-radius hover">1</span>
                         <span class="two padding border-radius hover">2</span>
                         <span class="three padding border-radius hover">3</span>
                         <span class="four padding border-radius hover">4</span>
                         <span class="five padding border-radius hover">5</span>
-                        <img class="arrowimagePadding" src="./Images/v_navi_backarrow.png">
+                        <span class="spanArrowImagePadding">></span>
                         <button class="last">Last</button>
                     </div>
                     <div class="show">
-                        <label for="show">Show : </label>
-                        <select>
-                            <option value="10">10</option>
+                        <label for="show">Show&nbsp:</label>
+                        <select class="showCustomArrow showCustomArrowShow">
+                            <option value="10" >10</option>
                             <option value="9">9</option>
                             <option value="8">8</option>
                             <option value="7">7</option>
@@ -246,7 +279,10 @@
                     <table>
                         <tr>
                             <th class="specificTableCoumnPadding spanNameTaskPadding paddingTaskName ImageJobTaskName">
-                                JOB/TASK NAME</th>
+                                JOB/TASK NAME
+                                    <img class="jobTaskNameDropDownArrow" src="./Images/th-img.png">
+                            
+                        </th>
                             <th class="ImageJobTaskName">RISK ASSESSOR</th>
                             <th class="ImageJobTaskName">CURRENT STATUS</th>
                             <th class="ImageJobTaskName">LAST COMPLETED</th>
@@ -299,7 +335,7 @@
 
 
     </div>
-
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
