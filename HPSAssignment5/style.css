@@ -518,7 +518,7 @@ input.checkbox {
 input[type="date"] {
     background-image: url(.//Images/cal.png);
     background-repeat: no-repeat;
-    background-position: 90%;
+    background-position: 96%;
     outline: none;
 }
 
@@ -527,8 +527,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .date-input input {
-    padding: 5px 0%;
-    padding-top: 8.5px;
+    padding: 9px 0px 5px 10px;
     border: 1px solid grey;
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
@@ -551,6 +550,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-right: -5px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    /* font-style: italic; */
 
 }
 
@@ -642,7 +642,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .padding {
-    padding: 1px 5px 1px 5px;
+    padding: 1px 8px 1px 8px;
 }
 
 .last {
@@ -673,6 +673,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .hover:active {
     background-color: rgb(43, 172, 204);
 }
+/* ============================================================== */
+input[type=date]::-webkit-calendar-picker-indicator {
+    margin-left: 100px;
+  }
+  /* ================================================================ */
 
 .pages {
     display: flex;
@@ -680,7 +685,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: space-between;
     border: none;
     background-color: #ccc;
-    padding: 0px 20px 10px 20px;
+    padding: 0px 20px 10px 25px;
     margin: 0;
 }
 
