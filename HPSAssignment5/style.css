@@ -91,7 +91,8 @@ body {
     float: right;
 
 }
-.logOut{
+
+.logOut {
     margin-top: 5px;
     font-size: 12px;
     border: none;
@@ -101,7 +102,6 @@ button {
     background-color: transparent;
     color: white;
     cursor: pointer;
-    /* margin-top: 5px; */
     font-weight: lighter;
 }
 
@@ -134,7 +134,7 @@ button {
 
     width: calc(100% - 20%);
     margin: auto;
-    
+
 }
 
 .searchJobsTask {
@@ -150,7 +150,6 @@ button {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border-right: hidden;
-    /* border-color: grey; */
     height: 31.5px;
     width: 70%;
     margin: -1px;
@@ -158,10 +157,6 @@ button {
 
 
 }
-/* input[type=text]:focus {
-    border: 1px solid #555;
-    border-right: hidden;
-} */
 
 .submit {
     color: black;
@@ -182,7 +177,8 @@ button {
     border-bottom-right-radius: 3px;
     font-weight: bold;
 }
-.search:active{
+
+.search:active {
     background-color: #aaa;
 }
 
@@ -197,13 +193,15 @@ button {
 .checkboxContainer {
     padding-right: 2%;
 }
-.checkbox{
+
+.checkbox {
     font-size: small;
     font-weight: 500;
-    accent-color: #ccc; 
+    accent-color: #ccc;
 }
-input.checkbox{
-    margin:11px 2px 20px 0px;
+
+input.checkbox {
+    margin: 11px 2px 20px 0px;
 }
 
 .reset {
@@ -211,7 +209,6 @@ input.checkbox{
     border: none;
     color: black;
     font-size: 12px;
-    /* font-size: small; */
     font-weight: 500;
 }
 
@@ -223,7 +220,6 @@ input.checkbox{
 }
 
 
-/* grid starts from here */
 .gridmainContentContainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -256,36 +252,36 @@ input.checkbox{
     border-radius: 3px;
     margin-top: 10px;
 }
-.riskAssissmentDetails{
+
+.riskAssissmentDetails {
     font-size: small;
     font-weight: 600;
 }
-.riskLevel{
+
+.riskLevel {
     font-size: small;
     font-weight: 600;
     padding: 0px 25px 13px 15px;
 }
-.location{
-    font-size: small;
-    font-weight: 600;
-}
-.DepartmentDivisionSection{
-    font-weight: 600;
-    font-size: small;
 
+.location {
+    font-size: small;
+    font-weight: 600;
 }
-.completedBetween{
+
+.DepartmentDivisionSection {
     font-weight: 600;
     font-size: small;
 
 }
 
+.completedBetween {
+    font-weight: 600;
+    font-size: small;
 
-/* .status {
-    width: 20px;
-    float: right;
-    cursor: pointer;
-} */
+}
+
+
 
 .labelStatus {
     padding: 5px 1%;
@@ -293,90 +289,81 @@ input.checkbox{
     border-radius: 3px;
     padding: 7px;
     padding-right: 30px;
-   
+
 
 }
-.customArrow{
+
+.customArrow {
     width: -webkit-fill-available;
-    background-image: url('./Images/th-img.png') ;
+    background-image: url('./Images/th-img.png');
     background-repeat: no-repeat no-repeat;
-    background-position: right .7em top 50% ;
+    background-position: right .7em top 50%;
     appearance: none;
     border: 1px solid grey;
-    
+
 
 }
-.showCustomArrow{
+
+.showCustomArrow {
     width: -webkit-fill-available;
-    background-image: url('./Images/th-img.png') ;
+    background-image: url('./Images/th-img.png');
     background-repeat: no-repeat no-repeat;
-    background-position: right top 50% ;
+    background-position: right top 50%;
     appearance: none;
     border: 1px solid grey;
 }
-.show{
+
+.show {
     width: 10%;
 }
 
-.showCustomArrowShow{
+.showCustomArrowShow {
     width: 27%;
     padding-left: 5px;
 }
 
-.border-for-image{
+.border-for-image {
     position: relative;
 }
 
-.border-for-image:after{
-position: absolute;
-top:0;
-right: 30px;
-height: 30px;
-content: "";
-border-left: 1px solid grey;
+.border-for-image:after {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    height: 30px;
+    content: "";
+    border-left: 1px solid grey;
 }
-.locationForCustomArrow{
-position: relative;  
-width: 25%; 
-margin-bottom: 15px; 
+
+.locationForCustomArrow {
+    position: relative;
+    width: 25%;
+    margin-bottom: 15px;
 }
-.locationForCustomArrow:after{
+
+.locationForCustomArrow:after {
     position: absolute;
     border-left: 1px solid grey;
-    top:4px;
+    top: 4px;
     right: 30px;
     height: 28px;
     content: "";
 
 }
 
-.displayFlexJustifyContent{
+.displayFlexJustifyContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.marginForWhereOtherField{
+
+.marginForWhereOtherField {
     margin-right: 20%;
 }
-.gap{
+
+.gap {
     gap: 12.5%;
 }
-
-
-
-
-/* =========================this========== */
-/* .status {
-    float: right;
-    background-image: url(./Images/th-img.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position-x:99.5% ;
-    
-} */
-
-
- 
 
 .greenBackgroundImage {
     background-image: url(./Images/green-color.jpg);
@@ -436,7 +423,8 @@ margin-bottom: 15px;
     height: 145px;
     padding: 0px 25px 30px 12px;
 }
-.hazardType{
+
+.hazardType {
     font-size: small;
     font-weight: 500;
 }
@@ -471,7 +459,6 @@ margin-bottom: 15px;
 }
 
 .paddingSelect {
-    /* float: left; */
     padding: 6px;
     margin-top: 3px;
 }
@@ -508,14 +495,13 @@ margin-bottom: 15px;
 
 .borderbottomPaddingLocation {
     border-bottom: 1px solid grey;
-    /* padding-top: 5px;
-    padding-left: 1%; */
+
     padding: 5px 25px 0px 16px;
 }
-.borderbottomPaddingDepartmentDevisionSection{
+
+.borderbottomPaddingDepartmentDevisionSection {
     border-bottom: 1px solid grey;
-    /* padding-top: 5px;
-    padding-left: 1%; */
+
     padding: 5px 25px 0px 16px;
 }
 
@@ -523,30 +509,20 @@ margin-bottom: 15px;
     position: relative;
     display: inline-block;
     margin: 5px 8% 1.5% 0%;
-   
-} 
 
-/* --------------------------------------------- */
-/* input[type="checkbox"] {
-    display: inline-block;
-    margin: 11px 2px 11px 0px;
-  }
-input[type="checkbox"]:checked ~ input[type="checkbox"] {
-    pointer-events: none;
-    opacity: 0.5;
-} */
-/* .................................... */
-input[type="date"]{
-    /* height: auto;
-    width: auto; */
+}
+
+input[type="date"] {
     background-image: url(.//Images/cal.png);
     background-repeat: no-repeat;
     background-position: 90%;
     outline: none;
 }
-input[type="date"]::-webkit-calendar-picker-indicator{
+
+input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
+
 .date-input input {
     padding: 5px 0%;
     padding-top: 8.5px;
@@ -565,7 +541,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 
 .startLabel {
     background-color: #ccc;
-        padding: 5px 10px 5px 6px;
+    padding: 5px 10px 5px 6px;
 
     border: 1px solid grey;
     border-right: hidden;
@@ -583,7 +559,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     width: 18%;
     border-radius: 2px;
     font-weight: bold;
-    
+
 }
 
 .applyChanges:active {
@@ -595,7 +571,6 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 .completedBetweenContainer {
-    /* padding: 10px; */
     padding: 5px 0% 0% 1%;
 }
 
@@ -629,22 +604,22 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     background-color: #ccc;
     cursor: pointer;
 }
-.spanArrowImagePadding{
+
+.spanArrowImagePadding {
     color: black;
     background-color: #ccc;
     border: 1px solid gray;
     padding: 0px 12px 2px 12px;
-    /* margin-left: 10px; */
-    /* width: 40px;
-    height: 25px; */
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
 }
-.spanArrowImagePadding:active{
+
+.spanArrowImagePadding:active {
     background-color: #aaa;
 
 }
+
 .arrowImagePadding:active {
     background-color: #aaa;
 }
@@ -654,19 +629,9 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 .last {
-    /* color: grey;
-    background-color: #ccc;
-    border: 1px solid gray;
-    width: 52px;
-    margin-left: 12px;
-    padding-top: 3px;
-    border-radius: 5px;
-    cursor: pointer; */
-
     color: grey;
     background-color: #ccc;
     border: 1px solid gray;
-    /* padding-top: 3px; */
     width: 40px;
     height: 25px;
     margin-left: 12px;
@@ -676,14 +641,16 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 .hover:hover {
-    background-color:rgb(25, 96, 155);
+    background-color: rgb(25, 96, 155);
     color: white;
     cursor: pointer;
 }
-.navHover:hover{
-    background-color:white;
-    color:  rgb(43, 172, 204);
+
+.navHover:hover {
+    background-color: white;
+    color: rgb(43, 172, 204);
     cursor: pointer;
+
 }
 
 .hover:active {
@@ -728,6 +695,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     text-align: justify;
+    border-bottom: hidden;
 }
 
 .gridItem:nth-child(5) {
@@ -744,6 +712,8 @@ table {
 .tablegrid {
     margin: 0;
     border-bottom: none;
+    border-right: none;
+    border-left: none;
 }
 
 td,
@@ -758,7 +728,8 @@ th {
 }
 
 .tableImage {
-    padding: 5px 10px 5px 0px;}
+    padding: 5px 10px 5px 0px;
+}
 
 .spanNameTaskPadding {
     padding: 1.5%;
@@ -767,16 +738,6 @@ th {
 .paddingTaskName {
     padding-left: 20px;
 }
-/* .specificTableCoumnPadding{
-    background-image: url(./Images/drop-arrow.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-
-} */
- .jobTaskNameDownArrow{
-
- }
 
 .ImageJobTaskName {
     background-image: url(./Images/rght-btn.gif);
@@ -784,7 +745,8 @@ th {
     background-size: cover;
 
 }
-.jobTaskNameDropDownArrow{
+
+.jobTaskNameDropDownArrow {
     margin: 3px 0px 3px 15px;
 }
 
@@ -795,6 +757,6 @@ footer {
     text-align: right;
 }
 
-.background-image-div{
+.background-image-div {
     width: 100%;
 }
