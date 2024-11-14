@@ -673,11 +673,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .hover:active {
     background-color: rgb(43, 172, 204);
 }
-/* ============================================================== */
-input[type=date]::-webkit-calendar-picker-indicator {
-    margin-left: 100px;
-  }
-  /* ================================================================ */
 
 .pages {
     display: flex;
