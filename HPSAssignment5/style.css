@@ -280,6 +280,9 @@ input.checkbox {
     font-size: small;
 
 }
+.start-date{
+    cursor: pointer;
+}
 
 
 
@@ -314,11 +317,11 @@ input.checkbox {
 }
 
 .show {
-    width: 10%;
+    width: 15%;
 }
 
 .showCustomArrowShow {
-    width: 27%;
+    width: 18%;
     padding-left: 5px;
 }
 
