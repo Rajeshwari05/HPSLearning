@@ -667,7 +667,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: white;
     color: rgb(43, 172, 204);
     cursor: pointer;
-
 }
 
 .hover:active {

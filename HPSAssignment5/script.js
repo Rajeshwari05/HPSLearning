@@ -1,6 +1,5 @@
 function chechTogling(e){
     console.log(e.target.value);
-
     if (e.target.value  == 'on') {
         if(e.target.id == 'minor'){
             document.getElementById('sever').checked = false;
