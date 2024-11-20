@@ -53,39 +53,41 @@
                 <img src="./Images/bstro-logo.gif">
             </div>
             <div class="gridmainContentContainer">
-                <div class=" gridItem">
-                    <div class="riskAssissment displaycolumn">
-                        <span class="riskAssissmentDetails">RISK ASSISSMENT DETAILS</span>
-                        <input class="SbstaskProjectName" placeholder="SbsTaskProject Name"></input><br>
+                <div class=" gridItem margin1">
+                        <div class="riskAssissment displaycolumn">
+                            <span class="riskAssissmentDetails">RISK ASSISSMENT DETAILS</span>
+                            <input class="SbstaskProjectName" placeholder="SbsTaskProject Name"></input><br>
 
-                        <div class="border-for-image">
+                            <div class="border-for-image">
 
-                            <select name="Status" class="status customArrow labelStatus">
-                                <option value selected disabled>Status
-                                </option>
-                                <option value="status1">status1</option>
-                                <option value="status2">status2</option>
-                                <option value="status3">status3</option>
-                                <option value="status4">status4</option>
-                                <option value="status5">status5</option>
-                            </select>
+                                <select name="Status" class="status customArrow labelStatus">
+                                    <option value selected disabled>Status
+                                    </option>
+                                    <option value="status1">status1</option>
+                                    <option value="status2">status2</option>
+                                    <option value="status3">status3</option>
+                                    <option value="status4">status4</option>
+                                    <option value="status5">status5</option>
+                                </select>
+                            </div>
+
+
+                            <br>
+                            <div class="border-for-image">
+                                <select name="Assessor Name" class="assessorName customArrow labelStatus">
+                                    <option value selected disabled>Risk Assessor Name</option>
+                                    <option value="Assessor Name1">Assessor Name1</option>
+                                    <option value="Assessor Name2">Assessor Name2</option>
+                                    <option value="Assessor Name3">Assessor Name3</option>
+                                    <option value="Assessor Name4">Assessor Name4</option>
+                                    <option value="Assessor Name5">Assessor Name5</option>
+                                </select>
+                            </div>
                         </div>
-
-
-                        <br>
-                        <div class="border-for-image">
-                            <select name="Assessor Name" class="assessorName customArrow labelStatus">
-                                <option value selected disabled>Risk Assessor Name</option>
-                                <option value="Assessor Name1">Assessor Name1</option>
-                                <option value="Assessor Name2">Assessor Name2</option>
-                                <option value="Assessor Name3">Assessor Name3</option>
-                                <option value="Assessor Name4">Assessor Name4</option>
-                                <option value="Assessor Name5">Assessor Name5</option>
-                            </select>
-                        </div>
-                    </div>
+                    
                 </div>
-                <div class="riskLevelAndHazardType gridItem displayflex ">
+
+                <div class="riskLevelAndHazardType gridItem margin2 displayflex ">
 
                     <div class="riskLevel displaycolumn ">
                         <span class="riskLevel">RISK LEVEL</span>
@@ -109,26 +111,27 @@
                     <div class="hazardTypeContainer">
                         <span class="hazardType">HAZARD TYPE</span>
                         <div class="sideScrollBar  ">
-                            <div class="imageSpan1 imageSpanHover displayflex">
-                                <img src="./Images/icon1-active.png">
-                                <span class="radiological">Radio Logical</span>
+                            <div class="imageSpan1 imageSpanHover displayflex paddingImagespan">
+                                <img src="./Images/icon1-active.png" width="20px" height="17">
+                                <span class="radiological paddingContent">Radio Logical</span>
                             </div>
-                            <div class="imageSpan2 imageSpanHover displayflex">
-                                <img src="./Images/icon2-active.png">
-                                <span class="radiological">Chemical</span>
+                            <div class="imageSpan2 imageSpanHover displayflex paddingImagespan">
+                                <img src="./Images/icon3-active.png" width="20px" height="17" >
+                                <span class="radiological paddingContent">Chemical</span>
                             </div>
-                            <div class="imageSpan3 imageSpanHover displayflex">
-                                <img src="./Images/icon3-active.png">
-                                <span class="radiological">Electrical</span>
+                            <div class="imageSpan3 imageSpanHover displayflex paddingImagespan">
+                                <img src="./Images/icon5-active.png" width="20px" height="17" >
+                                <span class="radiological paddingContent">Electrical</span>
                             </div>
-                            <div class="imageSpan4 imageSpanHover displayflex">
-                                <img src="./Images/icon4-active.png">
-                                <span class="radiological">Ergonomical</span>
+                            <div class="imageSpan4 imageSpanHover displayflex paddingImagespan">
+                                <img src="./Images/icon4-active.png" width="20px" height="17">
+                                <span class="radiological paddingContent">Ergonomical</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="locationcountryStateCityContainer gridItem">
+
+                <div class="locationcountryStateCityContainer gridItem margin3">
                     <div class="locationContainer borderbottomPaddingLocation">
                         <span class="location">LOCATION</span>
                         <br>
@@ -226,17 +229,17 @@
                     <div class="completedBetweenContainer ">
                         <span class="completedBetween">COMPLETED BETWEEN</span><br>
                         <div class="justifyContentSpaceBetween">
-                        <div class="date-input ">
-                            <label for="start-date" class="startLabel">START</label>
-                            <input type="date" class="start-date">
+                            <div class="date-input ">
+                                <label for="start-date" class="startLabel">START</label>
+                                <input type="date" class="start-date">
 
+                            </div>
+                            <div class="date-input ">
+                                <label for="start-date" class="startLabel">END</label>
+                                <input type="date" class="start-date">
+                            </div>
+                            <button type="submit" value="Apply Changes" class="applyChanges">Apply Changes</button>
                         </div>
-                        <div class="date-input ">
-                            <label for="start-date" class="startLabel">End</label>
-                            <input type="date" class="start-date">
-                        </div>
-                        <button type="submit" value="Apply Changes" class="applyChanges">Apply Changes</button>
-                    </div>
                     </div>
                 </div>
                 <div class="pages gridItem">
@@ -337,4 +340,5 @@
     </div>
     <script type="text/javascript" src="./script.js"></script>
 </body>
+
 </html>
