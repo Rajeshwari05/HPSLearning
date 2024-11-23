@@ -36,8 +36,6 @@ input {
 
 }
 
-.display {}
-
 form .display {
   display: flex;
   justify-content: flex-end;
