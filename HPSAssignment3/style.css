@@ -111,9 +111,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 45px;
-  width: 90%;
-  margin: 0px;
+  /* height: 45px; */
+  /* width: 90%; */
+  /* margin: 0px; */
   display: flex;
   font-size: x-large;
 
@@ -126,12 +126,12 @@ body {
   background-size: cover;
   float: right;
   height: 30px;
-  width: 115px;
+  /* width: 115px; */
   display: flex;
   margin: auto;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+  /* justify-content: center; */
 
 }
 
@@ -204,7 +204,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 10px;
   height: 18px;
-  width: 180px;
+  width: 180px
   grid-column-gap: 1px;
 }
 
