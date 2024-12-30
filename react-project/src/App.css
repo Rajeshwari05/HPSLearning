@@ -7,7 +7,6 @@ body {
 }
 
 h1, h2 {
-  color: #444;
   text-align: center;
 }
 
@@ -102,7 +101,6 @@ button:hover {
 .navbar .links a:hover {
   text-decoration: underline;
 }
-/* register css */
 
 
 
