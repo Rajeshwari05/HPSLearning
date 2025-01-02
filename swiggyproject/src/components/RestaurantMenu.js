@@ -99,7 +99,7 @@ function RestaurantMenu() {
                             src={`https://media-assets.swiggy.com/swiggy/image/upload/${itemCard.card.info.imageId}`}
                             alt="itemCard.card.info"
                           />
-                          <button onClick={() =>handleAddToCart(itemCard.card.info, restaurantData)} className="add-btn">ADD</button>
+                          <button onClick={() =>handleAddToCart(itemCard.card.info, restaurantData)} className="add-btn addGrid">ADD</button>
                         </div>
                       </div>
                     );

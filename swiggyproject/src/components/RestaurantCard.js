@@ -9,7 +9,7 @@ function RestaurantCard({info}){
     }
     return(
         <>
-         <Link to={`/restaurantMenu/${info.id}`} >
+         <Link className="linkTextDecoration" to={`/restaurantMenu/${info.id}`} >
          <div className="restaurantCard" onClick ={()=> restaurantMenuFunction()}>
                         <img
                             className="TopRestaurantsImageDivSize imageBorder translate"
@@ -23,10 +23,10 @@ function RestaurantCard({info}){
                         
                     </div>
                     <div className="detailsSection">
-                    <h2 className="detailsSectionMargin subwayFontSize">{info?.name}</h2>
+                    <h2 className="detailsSectionMargin subwayFontSize color">{info?.name}</h2>
                     <span className="detailsSectionMargin startIcon ">&#9733;</span>
-                    {info?.avgRating} {" • " + info?.sla?.slaString}
-                    <p className="detailsSectionMargin fontColor">{info?.cuisines?.join(", ")} </p>
+                    <span className="ratingAndTimeFordistance">{info?.avgRating} {" • " + info?.sla?.slaString}</span>
+                    <p className="detailsSectionMargin fontColor marginTop">{info?.cuisines?.join(", ")} </p>
                     <p className="detailsSectionMargin fontColor">{info?.areaName}</p>
                     </div>
                     </Link>

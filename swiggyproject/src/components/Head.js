@@ -1,43 +1,45 @@
 import React from "react";
 import "./Component.css";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-
+import { useSelector } from "react-redux";
+import { Link, useLocation } from "react-router-dom";
 
 export function Head() {
-
   const cartData = useSelector((state) => state.cartSlice.cartItems);
-  function handleClickCart(){
-    console.log("You are in cart count container")
+  const location = useLocation(); // Hook to get current path
+
+
+  function handleClickCart() {
+    console.log("You are in cart count container");
   }
 
   const navItems = [
     {
-      name : "Swiggy Corporate",
-      image : <i className="fi fi-rr-shopping-bag"></i>
+      name: "Swiggy Corporate",
+      path: "/corporate",
+      image: <i className="fi fi-rr-shopping-bag"></i>,
     },
     {
-       name : "Search",
-       image : <i className="fi fi-rr-search"></i>
+      name: "Search",
+      path: "/search",
+      image: <i className="fi fi-rr-search"></i>,
     },
     {
-      name : "Offers",
-      image : <i className="fi fi-rr-badge-percent"></i>
+      name: "Help",
+      path: "/help",
+      image: <i className="fi fi-rr-ring"></i>,
     },
     {
-      name : "Help",
-      image :<i className="fi fi-rr-ring"></i>
+      name: "Sign-in",
+      path: "/sign-in",
+      image: <i className="fi fi-rr-user"></i>,
     },
     {
-      name : "Sign-in",
-      image : <i className="fi fi-rr-user"></i>
+      name: "Cart",
+      path: "/cart",
+      image: <i className="fi fi-rr-shopping-cart"></i>,
     },
-    {
-      name : "Cart",
-      image : <i className="fi fi-rr-shopping-cart"></i>
-    }
+  ];
 
-  ]
   return (
     <div className="header">
       <div className="imgotherArrowAdj">
@@ -52,47 +54,32 @@ export function Head() {
             <i className="fi fi-rr-angle-small-down arrow"></i>
           </div>
         </div>
-     
-      <div className="swiggySOHS gap">
-        {
-          navItems.map((data) => (
-            
-          
-          data.name === "Cart"?(<Link to={"/cart"}  onClick={handleClickCart} className="flex">
-          {data.image}
-          <p>{data.name}</p>
-          <div>
-          {data.name === "Cart" &&
-            <p>{cartData.length}</p>
-          }
-          </div>
-        </Link>): data.name === "Sign-in" ? ((<Link to={"/sign-in"} className="flex">
-          {data.image}
-          <p>{data.name}</p>
-          <div >
-          {data.name === "Cart" &&
-            <p>{cartData.length}</p>
-          }
-          </div>
-        </Link>
-        )
 
-        ):((<div className="flex">
-          {data.image}
-          <p>{data.name}</p>
-          <div >
-          {data.name === "Cart" &&
-            <p>{cartData.length}</p>
-          }
-          </div>
+        <div className="swiggySOHS gap">
+          {navItems.map((data) => (
+            <Link
+              key={data.name}
+              to={
+                data.name === "Search" ? "/search"
+                  :  data.name === "Swiggy Corporate"
+                  ? "/corporate"
+                  : data.name === "Help"
+                  ? "/help"
+                  : data.name === "Cart"
+                  ? "/cart"
+                  : data.name === "Sign-in"
+                  ? "/sign-in"
+                  : "#"
+              }
+              onClick={data.name === "Cart" ? handleClickCart : null}
+              className={`flex linkTextDecoration color hoverColor ${location.pathname === data.path ? "active" : " "}`}
+            >
+              {data.image}
+              <p>{data.name}</p>
+              {data.name === "Cart" && <p>{cartData.length}</p>}
+            </Link>
+          ))}
         </div>
-        )
-
-        )
-          ))
-        }
-        
-      </div>
       </div>
     </div>
   );

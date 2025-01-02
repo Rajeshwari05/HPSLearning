@@ -46,7 +46,7 @@ const SignIn = () => {
       savedUser.password === formData.password
     ) {
       alert("Login successful!");
-      navigate("/"); // Navigate to home page after login
+      navigate("/home"); // Navigate to home page after login
     } else {
       alert("Invalid credentials. Please try again.");
     }
