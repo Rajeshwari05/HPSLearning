@@ -296,10 +296,10 @@ body{
 
 .restaurant-container {
   width: 80%;
-  margin: 30px auto;
+  margin: 140px auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding:20px;
 }
 
 .restaurant-header {
@@ -512,14 +512,13 @@ body{
 
 .cart-container {
   max-width: 600px;
-  margin: 20px auto;
+  margin: 140px auto;
   padding: 20px;
   display: grid;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
-  padding-top: 100px;
 }
 
 .cart-item {
@@ -599,7 +598,7 @@ body{
 .SignIn {
   width: 100%;
   max-width: 400px;
-  margin: 100px auto;
+  margin: 140px auto;
   padding: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -685,8 +684,8 @@ body{
 /* Help.js */
 .help-container {
   max-width: 800px;
-  margin: 50px auto;
-  padding: 80px 20px;
+  margin: 140px auto;
+  padding: 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
