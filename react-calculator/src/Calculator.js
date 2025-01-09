@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 
-function Calculator() {
+function formComponent() {
   const [value, setvalue] = useState(" ");
   return (
     <form action="">
@@ -42,4 +42,4 @@ function Calculator() {
 }
 
 
-export default Calculator;
+export default formComponent
