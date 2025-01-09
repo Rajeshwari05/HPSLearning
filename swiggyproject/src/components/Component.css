@@ -497,12 +497,12 @@ body{
 }
 .imageStyling {
   width: 100%;
-  max-height: 400px; /* Prevents stretching */
+  max-height: 400px; 
   object-fit: cover;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
   image-rendering: -o-crisp-edges;
-  image-rendering: optimizeQuality; /* Fallback for older browsers */
+  image-rendering: optimizeQuality; 
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
