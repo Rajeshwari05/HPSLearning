@@ -29,7 +29,7 @@ export default function Search() {
   }
 
   return (
-    <div>
+    <div className="">
       <div className="searchSubmit">
         <input
           type="text"

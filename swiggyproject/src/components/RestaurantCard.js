@@ -17,7 +17,7 @@ function RestaurantCard({info}){
                             alt={info?.name}
                         />
                         <div className="imageBlackShadeColor BlackShadowItemFont">
-                            <p>{info?.aggregatedDiscountInfoV3?.header} {info?.aggregatedDiscountInfoV3?.subHeader}</p>
+                            <p className="headerSubHeaderPadding">{info?.aggregatedDiscountInfoV3?.header} {info?.aggregatedDiscountInfoV3?.subHeader}</p>
                         </div>
                         
                         

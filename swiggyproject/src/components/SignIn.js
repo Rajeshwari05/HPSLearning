@@ -6,7 +6,6 @@ const SignIn = () => {
   const [formData, setFormData] = useState({ email: "", password: "", newPassword: "" });
   const navigate = useNavigate();
 
-  // Check if user is already registered
   useEffect(() => {
     const savedUser = localStorage.getItem("user");
     if (savedUser) {
@@ -14,13 +13,11 @@ const SignIn = () => {
     }
   }, []);
 
-  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle registration
   const handleSignIn = (e) => {
     e.preventDefault();
     if (!formData.email || !formData.password || !formData.newPassword) {
@@ -36,7 +33,6 @@ const SignIn = () => {
     setIsSignIn(true);
   };
 
-  // Handle login
   const handleLogin = (e) => {
     e.preventDefault();
     const savedUser = JSON.parse(localStorage.getItem("user"));
@@ -46,14 +42,14 @@ const SignIn = () => {
       savedUser.password === formData.password
     ) {
       alert("Login successful!");
-      navigate("/home"); // Navigate to home page after login
+      navigate("/home"); 
     } else {
       alert("Invalid credentials. Please try again.");
     }
   };
 
   return (
-    <div className="SignIn">
+    <div className="SignIn ">
       <h2>{isSignIn ? "Login" : "SignIn"}</h2>
       <form onSubmit={isSignIn ? handleLogin : handleSignIn}>
         <div>
@@ -77,7 +73,6 @@ const SignIn = () => {
           />
         </div>
         
-        {/* New Password field shown only during registration */}
         {!isSignIn && (
           <div>
             <label>New Password:</label>

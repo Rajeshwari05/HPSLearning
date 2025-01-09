@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Component.css";
+import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
+import { fetchHomePageData } from "../actions/homePageAction";
+import swiggylogo from '../Images/swiggy-logo.jpg'
 
 export function Head() {
+  const dispatch = useDispatch();
   const cartData = useSelector((state) => state.cartSlice.cartItems);
-  const location = useLocation(); // Hook to get current path
+  const location = useLocation(); 
+
+ 
+  useEffect(() => {
+    console.log("in Effect")
+     dispatch(fetchHomePageData());
+  }, []);
 
 
   function handleClickCart() {
@@ -46,7 +56,7 @@ export function Head() {
         <div className="imgOther">
           <img
             className="img"
-            src="https://tse1.mm.bing.net/th?id=OIP._ViV12AGgkktgO0bh02AGwHaK9&pid=Api&P=0&h=180"
+            src={swiggylogo}
             alt="swiggy-logo"
           />
           <div className="flex">

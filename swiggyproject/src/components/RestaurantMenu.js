@@ -4,9 +4,14 @@ import { json, Link, useParams } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../utils/cartSlice";
+import { useSelector } from "react-redux";
+import Loader from "./Loader";
 
 
 function RestaurantMenu() {
+
+  const isLoading = useSelector(state => state.loaderReducerSlice.isLoading);
+  
   const { id } = useParams();
 
   const [restaurantData, setRestaurantData] = useState([]);
@@ -20,16 +25,17 @@ function RestaurantMenu() {
 
 
   async function fetchData() {
-    const response = await fetch(
-      `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.9690247&lng=72.8205292&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`
-    );
-    const result = await response.json();
-    setHeader(result);
-    setRestaurantData(result?.data?.cards[2].card?.card?.info);
-    setItemsInfo(
-      result?.data?.cards[4].groupedCard?.cardGroupMap?.REGULAR?.cards
-    );
-    console.log(id);
+      const response = await fetch(
+        `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.9690247&lng=72.8205292&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`
+      );
+      const result = await response.json();
+      setHeader(result);
+      setRestaurantData(result?.data?.cards[2].card?.card?.info);
+      setItemsInfo(
+        result?.data?.cards[4].groupedCard?.cardGroupMap?.REGULAR?.cards
+      );
+      console.log(id);
+   
   }
 
   useEffect(() => {
@@ -54,8 +60,10 @@ function RestaurantMenu() {
   };
 
   return (
+    
     <div className="restaurant-container">
-      <div className="restaurant-header">
+     
+     <div className="restaurant-header">
         <h2>{restaurantData.name}</h2>
       </div>
       <div className="restaurant-details">
@@ -81,7 +89,6 @@ function RestaurantMenu() {
                       <div className="menu-item">
                         <div className="menu-item-details">
                           <p>{itemCard.card.info.name}</p>
-                          {/* have to remove the last two digits in default price */}
                           <span>
                             ₹
                             {itemCard.card.info.defaultPrice
@@ -110,6 +117,8 @@ function RestaurantMenu() {
           }
         })}
       </div>
+      
+
       {selectedName && (
         <div className="popup-overlay">
           <div className="popup" onClick={(e) => e.stopPropagation()}>

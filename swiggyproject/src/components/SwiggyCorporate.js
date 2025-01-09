@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export function SwiggyCorporate() {
   return (
-    <div className="corporate-container">
+    <div className="corporate-container ">
       <h1>Welcome to Swiggy Corporate</h1>
       <p>
         Empower your teams with delicious meals. Partner with Swiggy Corporate

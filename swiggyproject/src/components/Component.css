@@ -1,6 +1,10 @@
 /* ./Components/Components.css */
 @import "@flaticon/flaticon-uicons/css/all/all";
-
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy, Arial, sans-serif !important;
+}
 .header {
   width: 100%;
   padding: 10px;
@@ -9,10 +13,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky; /* Change from fixed to sticky */
-  top: 0; /* Keeps it at the top during scroll */
-  background-color: white; /* Ensure it doesn't become transparent */
-  z-index: 100; /* Higher z-index to stay above other content */
+  position: fixed; 
+  top: 0;
+  background-color: white;
+  z-index: 100; 
 }
 
 .imgotherArrowAdj {
@@ -62,6 +66,7 @@
 }
 .mainSection {
   width: 100%;
+  padding-top: 90px;
 }
 .widthForBody {
   width: 80%;
@@ -103,7 +108,7 @@
   margin-bottom: 50px;
 }
 .TopRestaurantsImageDivSize {
-  width: 295px;
+  width: 362px;
   height: 182px;
   object-fit: cover;
 }
@@ -114,8 +119,26 @@
   border-radius: 20px;
 }
 .topRestaurantImageGap {
-  gap: 40px;
+  gap: 10px;
 }
+
+
+.loader{
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-top: 10%;
+}
+
+
+.headerSubHeaderPadding{
+  padding-left: 20px;
+}
+
+
 .imageBlackShadeColor {
   position: absolute;
   bottom: 0;
@@ -130,12 +153,12 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding-left: 20px;
 }
 .restaurantCard {
   position: relative;
   display: flex;
   border-radius: 16px;
+  width: 360px;
 }
 .BlackShadowItemFont {
   font-size: x-large;
@@ -146,6 +169,7 @@
 }
 .detailsSection {
   margin: 10px;
+  width: 360px;
 }
 .transformScale {
   transition: transform 0.3s ease-in;
@@ -163,10 +187,8 @@
   color: white;
   text-align: center;
   line-height: 18px;
-  /* Makes it a circle */
   border-radius: 50%;
   font-size: 14px;
-  /* Add spacing to the right of the star */
   margin-right: 5px;
 }
 .fontColor {
@@ -181,7 +203,6 @@
 .marginTop {
   margin-top: 5px;
 }
-/* //css for onlinefood delivery */
 
 .container {
   padding: 20px;
@@ -192,33 +213,36 @@
   margin-bottom: 20px;
   color: #333;
 }
+.offer-padding{
+  padding-left: 20px;
+}
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 4 items per row */
-
-  /* Spacing between grid items */
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(308px, 4fr));
+  /* grid-template-columns: auto auto auto auto; */
   gap: 20px;
+  margin: 0 auto;
 }
 
 .grid-item {
-  /* background-color: #fff; */
-  border-radius: 10px;
-  overflow: hidden;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  transition: transform 0.3s ease-in;
-  width: 295px;
+  width: 300px;
+  gap: 10px;
+  margin-right: 60px;
 }
 
 .grid-item:hover {
   transform: scale(0.95);
+  transition: transform 0.3s ease-in;
+
 }
 .filter-container {
-  margin-top: 1.75rem; /* Equivalent to 'my-7' (7 * 0.25rem = 1.75rem) */
+  margin-top: 1.75rem; 
   margin-bottom: 1.75rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem; /* Equivalent to 'gap-3' (3 * 0.25rem = 0.75rem) */
+  gap: 0.75rem; 
 }
 .activeFilterBtn {
   border-radius: 40px;
@@ -375,6 +399,30 @@
   align-items: center;
   z-index: 1000;
 }
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 1000; */
+  /* border-top: 16px solid #3498db;  */
+  /* Blue */
+  /* border-radius: 50%; */
+  /* width: 120px;
+  height: 120px; */
+  animation: spin 2s infinite infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+}
 
 .popup-content {
   background: #fff;
@@ -471,6 +519,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
+  padding-top: 100px;
 }
 
 .cart-item {
@@ -637,7 +686,7 @@
 .help-container {
   max-width: 800px;
   margin: 50px auto;
-  padding: 20px;
+  padding: 80px 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -682,7 +731,7 @@
 
 .corporate-container {
   text-align: center;
-  padding: 50px;
+  padding: 115px;
   font-family: 'Arial', sans-serif;
   background-color: #f8f8f8;
 }
@@ -756,6 +805,7 @@
   display: flex;
   justify-content: center;
   margin: 20px 0;
+  padding-top: 115px;
 }
 
 .searchInput {

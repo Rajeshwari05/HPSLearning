@@ -22,7 +22,7 @@ export default function Help() {
   ];
 
   return (
-    <div className="help-container">
+    <div className="help-container ">
       <h1>Help & Support</h1>
       <p>Let's take a step ahead and help you better.</p>
       

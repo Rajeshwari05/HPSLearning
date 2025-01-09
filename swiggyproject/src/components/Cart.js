@@ -39,9 +39,9 @@ export default function Cart() {
       (sum, item) => sum + (item.price / 100) * quantities[item.id],
       0
     );
-    const deliveryFee = 38.85; // Static delivery fee
-    const platformFee = 10; // Static platform fee
-    const tax = itemTotal * 0.09; // Example GST (9%)
+    const deliveryFee = 38.85; 
+    const platformFee = 10; 
+    const tax = itemTotal * 0.09; 
     return {
       itemTotal,
       deliveryFee,
@@ -54,7 +54,7 @@ export default function Cart() {
   const totals = calculateTotal();
 
   return (
-    <div className="cart-container">
+    <div className="cart-container ">
       {cartData.length > 0 ? (
         <>
           {cartData.map((data) => (
