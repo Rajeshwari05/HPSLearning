@@ -1,46 +1,32 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Component.css";
-import { json, Link, useParams } from "react-router-dom";
-import toast from "react-hot-toast";
+import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../utils/cartSlice";
 import { useSelector } from "react-redux";
 import Loader from "./Loader";
+import {fetchRestaurantMenu} from "../actions/restaurantMenuAction";
 
 
 function RestaurantMenu() {
 
-  const isLoading = useSelector(state => state.loaderReducerSlice.isLoading);
-  
   const { id } = useParams();
 
-  const [restaurantData, setRestaurantData] = useState([]);
-  const [header, setHeader] = useState("");
-  const [itemsInfo, setItemsInfo] = useState([]);
+  useEffect(() => {
+    dispatch(fetchRestaurantMenu({id:id}));
+  }, []);
+
+  const isLoading = useSelector(state => state.loaderReducerSlice.isLoading);
+  const restaurantData = useSelector(state => state.restaurantMenuReducerSlice.restaurantMenuData);
+  const itemsInfo = useSelector(state => state.restaurantMenuReducerSlice.itemsInfo)
+
   const [selectedName, setSelectedName] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedDescription, setSelectedDescripton] = useState(null);
   const [selectedDefaultPrice, setSelectedDefaultPrice] = useState(null);
   const dispatch = useDispatch()
 
-
-  async function fetchData() {
-      const response = await fetch(
-        `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.9690247&lng=72.8205292&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`
-      );
-      const result = await response.json();
-      setHeader(result);
-      setRestaurantData(result?.data?.cards[2].card?.card?.info);
-      setItemsInfo(
-        result?.data?.cards[4].groupedCard?.cardGroupMap?.REGULAR?.cards
-      );
-      console.log(id);
-   
-  }
-
-  useEffect(() => {
-    fetchData();
-  }, []);
+  
   function handleClickImage(item) {
     console.log("You are in image tag");
     setSelectedName(item.name);
@@ -59,8 +45,8 @@ function RestaurantMenu() {
     setSelectedName(null);
   };
 
-  return (
-    
+  return isLoading? (<Loader/>):
+    (<>
     <div className="restaurant-container">
      
      <div className="restaurant-header">
@@ -143,7 +129,7 @@ function RestaurantMenu() {
           </div>
         </div>
       )}
-    </div>
+    </div></>
   );
 }
 

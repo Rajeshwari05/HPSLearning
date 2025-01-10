@@ -13,7 +13,6 @@ import { createSlice } from '@reduxjs/toolkit';
         initialState,
         reducers :{
             storeHomePageData : (state, action) =>{
-                console.log("I am in Store");
 
                 state.onYourMindData = action.payload.data.cards[0].card.card.imageGridCards.info;
                 state.topRestaurantData = action.payload.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;

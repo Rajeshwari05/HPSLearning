@@ -13,7 +13,6 @@ export function Head() {
 
  
   useEffect(() => {
-    console.log("in Effect")
      dispatch(fetchHomePageData());
   }, []);
 
@@ -26,27 +25,28 @@ export function Head() {
     {
       name: "Swiggy Corporate",
       path: "/corporate",
-      image: <i className="fi fi-rr-shopping-bag"></i>,
+      //how can i add alt to this image
+      image: <i aria-label="Corporate Icon" className="fi fi-rr-shopping-bag"></i>,
     },
     {
       name: "Search",
       path: "/search",
-      image: <i className="fi fi-rr-search"></i>,
+      image: <i  aria-label="Corporate Icon" className="fi fi-rr-search"></i>,
     },
     {
       name: "Help",
       path: "/help",
-      image: <i className="fi fi-rr-ring"></i>,
+      image: <i aria-label="Corporate Icon" className="fi fi-rr-ring"></i>,
     },
     {
       name: "Sign-in",
       path: "/sign-in",
-      image: <i className="fi fi-rr-user"></i>,
+      image: <i aria-label="Corporate Icon" className="fi fi-rr-user"></i>,
     },
     {
       name: "Cart",
       path: "/cart",
-      image: <i className="fi fi-rr-shopping-cart"></i>,
+      image: <i  aria-label="Corporate Icon" className="fi fi-rr-shopping-cart"></i>,
     },
   ];
 

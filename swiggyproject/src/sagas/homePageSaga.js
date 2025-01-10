@@ -8,7 +8,6 @@ import { hideLoader } from "../reducers/loaderReducer";
 
 //make API call
 async function fetchHomePageAPI(){
-    console.log(" I am in Saga");
     const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
     const result = await response.json();
     return result;   
@@ -18,7 +17,6 @@ function* fetchHomePageData(){
     try{
         yield put(showLoader())
         const response = yield call(fetchHomePageAPI);
-        console.log(" I am in Saga after network call");
         yield put(storeHomePageData(response))
         yield put(hideLoader())
 

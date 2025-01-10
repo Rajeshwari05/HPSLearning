@@ -7,7 +7,9 @@ import { handleAddToCart } from "./RestaurantMenu";
 import { addToCart } from "../utils/cartSlice";
 import { useDispatch } from "react-redux";
 
+
 export default function Search() {
+
   const [dishData, setDishData] = useState([]);
   const dispatch = useDispatch();
 

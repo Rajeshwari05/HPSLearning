@@ -6,7 +6,8 @@ import cartSlice from "./cartSlice";
 import filterSlice from "./filterSlice";
 import { watchHomePageSaga } from "../sagas/homePageSaga";
 import loaderReducerSlice from "../reducers/loaderReducer";
-
+import restaurantMenuReducerSlice from "../reducers/restaurantMenuReducer";
+import { watchRestaurantMenuSaga } from "../sagas/restaurantMenuSaga";
  const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
@@ -15,6 +16,7 @@ const store = configureStore({
         filterSlice,
         homePageReducerSlice,
         loaderReducerSlice,
+        restaurantMenuReducerSlice
 
     },
     middleware: (getDefaultMiddleware) => 
@@ -22,5 +24,6 @@ const store = configureStore({
 });
 
 sagaMiddleware.run(watchHomePageSaga)
+sagaMiddleware.run(watchRestaurantMenuSaga)
 
 export default store;
