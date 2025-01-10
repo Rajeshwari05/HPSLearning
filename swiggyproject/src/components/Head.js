@@ -25,7 +25,6 @@ export function Head() {
     {
       name: "Swiggy Corporate",
       path: "/corporate",
-      //how can i add alt to this image
       image: <i aria-label="Corporate Icon" className="fi fi-rr-shopping-bag"></i>,
     },
     {
