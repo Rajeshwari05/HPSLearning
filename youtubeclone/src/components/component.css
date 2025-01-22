@@ -1,0 +1,394 @@
+.container {
+  display: flex;
+  height: 100vh;
+ background-color: #2C3E50;
+}
+
+.sidebar {
+  background-color: #2C3E50;
+  display: flex;
+  flex-direction: column;
+  margin-left: -30px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 10px;
+
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background-color:  #34495E;
+  border-radius: 10px;
+}
+
+.sidebar:hover{
+  overflow-y:auto;
+}
+
+.sidebar .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.sidebar hr {
+  border: none;
+
+  margin: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0px 20px;
+  background-color: #ECF0F1;;
+  ;
+}
+
+.navSection {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.NavStyling {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  padding-left: 55px;
+  gap: 20px;
+  background-color: #2C3E50;
+}
+
+.menuImageSection {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: -56px;
+  margin-left: 16px;
+}
+
+.logoImage {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.searchMic {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  padding: 5px 15px;
+  margin-right: 20px;
+  width: 40%;
+}
+
+.searchMic input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.searchMic .search {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.searchMic .search:hover {
+  color: #ff0000;
+}
+
+.bellLogin {
+  display: contents;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.bellLogin .login {
+  margin-left: 10px;
+  padding: 0px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bellLogin .login:hover {
+  background-color: #f1f1f1; 
+
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 25px;
+}
+
+.video-item {
+  background-color: #ECF0F1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.thumbnail-container {
+  position: relative;
+}
+
+.thumbnail-container img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #e0e0e0;
+  border-radius: 10px;
+}
+.thumbnail-container img:hover{
+  transform: scale(0.98);
+  transition: transform 0.3s ease-out;
+  border-radius: 0px;
+}
+
+.duration-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.video-item p {
+  font-size: 14px;
+  margin: 0px 15px;
+  color: #333;
+}
+
+.viewsStyling {
+  color: #777;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.published-date {
+  display: flex;
+  align-items: center;
+  color: #777;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.published-date .icon {
+  margin-right: 5px;
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff0000;
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+}
+.ViewsAndPublishedDate{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  float: left;
+  margin-left: 15px;
+}
+.ViewsAndPublished{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+
+.SignIn {
+  width: 100%;
+  max-width: 400px;
+  margin: 140px auto;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.SignIn h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.SignIn form {
+  display: flex;
+  flex-direction: column;
+}
+
+.SignIn form div {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.SignIn label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.SignIn input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.SignIn input:focus {
+  border-color: #007bff;
+}
+
+.SignIn button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.SignIn button:hover {
+  background-color: #0056b3;
+}
+
+.SignIn button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .SignIn {
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .SignIn h2 {
+    font-size: 1.5rem;
+  }
+
+  .SignIn input,
+  .SignIn button {
+    font-size: 0.9rem;
+  }
+}
+
+.sidebar1 {
+  margin-left: -48px;
+  background-color: #2C3E50;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar1 a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 10px;
+
+}
+
+.sidebar1 a:hover,
+.sidebar1 a.active {
+  background-color: #34495E;
+  border-radius: 10px;}
+
+.sidebar1 .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.svgHeightWidth{
+  height: 30px;
+  width: 30px;
+}
+
+
+  
+  
+  
+   
+  
+
+ 
